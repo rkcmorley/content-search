@@ -1,0 +1,117 @@
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<link rel="stylesheet" href="./css/magnific-popup.css">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<script src="./js/jquery.magnific-popup.min.js"></script>
+<style>
+	.white-popup {
+  position: relative;
+  background: #FFF;
+  padding: 40px;
+  width: 90%;
+  max-width: 90%;
+  height: 80%;
+  margin: 20px auto;
+  text-align: center;
+  color: #FFF;
+  background: url(./img/window.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+.mfp-close-btn-in .mfp-close {
+    color: #FFF;
+}
+.ex-logo{
+	width: 350px;
+	height: auto;
+	margin: 0 0 20px 0;
+}
+
+p, ul, li{
+	font-family: 'Open Sans', sans-serif;
+}
+
+ ul { 
+ 	display:table; 
+ 	margin:0 auto;
+    list-style: none;
+    padding:0;	
+ }
+
+ li{
+ 	text-align: left;
+ 	margin:0 0 10px 0;
+ 	font-size: 17px;
+ }
+
+ li:before {
+    content: "\002022 ";
+    color: red; 
+    margin: 0 7px 0 0;
+
+}
+
+.h-p{
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 50px;
+}
+
+.sh-p{
+	font-size: 19px;
+	margin:0 0 25px 0;
+}
+
+.sml-p{
+	display:table; 
+    margin: 50px auto 115px auto;
+	font-size: 11px;
+	font-style: italic;
+    width: 40%;	
+}
+
+.popup-modal-dismiss{
+	width: 300px;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    background: #d1244b;
+    font-size: 18px;
+    margin: 1% 25%;
+    border-radius: 5px;
+    text-align: center;
+    color: #FFF;
+    text-decoration: none;
+}
+
+.popup-modal-dismiss:hover{
+	background:#8c1731;
+    -webkit-transition: background-color 600ms linear;
+    -moz-transition: background-color 600ms linear;
+    -o-transition: background-color 600ms linear;
+    -ms-transition: background-color 600ms linear;
+    transition: background-color 600ms linear;	
+}
+
+</style>
+<script>
+jQuery(window).load(function(){
+jQuery.magnificPopup.open({
+   items: [
+   {
+   	src: 
+   	'<div class="white-popup"><img class="ex-logo" src="./img/experian_logo.png"><p class="h-p">Important announcement &#124; Change of web service upgrade dates</p><p class="sh-p">Please note that we have changed the upgrade schedule&#58;</p><ul><li>13 March 2016 &#8211; Web Service which supports WASP</li><li>20 March 2016 &#8211; All other Web Services</li></ul><p class="sml-p">&#42;WASP stands for Web Application Security Protocol and refers to Experian built security system protecting its data within E-Series, CEMs and a few others.</p><p><a class="popup-modal-dismiss" href="#">Enter Site</a></p></div>',
+        type: 'inline'
+      }]
+})
+$(document).on('click', '.popup-modal-dismiss', function (e) {
+		e.preventDefault();
+		$.magnificPopup.close();
+	});
+});
+</script>
+<body>
+<div id="my-popup" class="mfp-hide white-popup">
+  Inline popup
+</div>
+<p>Blah blah blah</p>
+</body>
+</html>

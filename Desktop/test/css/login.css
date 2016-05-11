@@ -1,0 +1,150 @@
+.top-section {
+    height: 100px;
+}
+
+.header {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.6);
+    color: #034e7c;
+    text-align: center;
+    padding: 7px 0;
+    /* Old browsers */
+    
+    min-width: 0px;
+    height: 115px;
+
+    /* background: -moz-linear-gradient(top,  #D73000 0%, #FFFFFF 10%, #FFFFFF 100%); /* FF3.6+ */
+    /* background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#D73000), color-stop(10%,#FFFFFF), color-stop(100%,#FFFFFF)); /* Chrome,Safari4+ */
+    /* background: -webkit-linear-gradient(top,  #D73000 0%,#FFFFFF 10%,#FFFFFF 100%); /* Chrome10+,Safari5.1+ */
+    /* background: -o-linear-gradient(top,  #D73000 0%,#FFFFFF 10%,#FFFFFF 100%); /* Opera 11.10+ */
+    /* background: -ms-linear-gradient(top,  #D73000 0%,#FFFFFF 10%,#FFFFFF 100%); /* IE10+ */
+    /* background: linear-gradient(to bottom,  #D73000 0%,#FFFFFF 10%,#FFFFFF 100%); /* W3C */
+    
+    // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#D73000', endColorstr='#FFFFFF',GradientType=0 ); /* IE6-9 */
+    border-top: none;
+
+}
+.header img.logo {
+    height: 105px;
+    margin:0;
+}
+
+.footer {
+    width: 100%;
+    background: #FFF;
+    /* Old browsers */
+    /*
+    background: -moz-linear-gradient(top, #f5f5f5 0%, #ececec 10%, #ededed 100%);*/
+    /* FF3.6+ */
+    /*
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f5f5f5), color-stop(10%, #ececec), color-stop(100%, #ededed));
+    /* Chrome,Safari4+ */
+    /*
+    background: -webkit-linear-gradient(top, #f5f5f5 0%, #ececec 10%, #ededed 100%);
+    /* Chrome10+,Safari5.1+ */
+    /*
+    background: -o-linear-gradient(top, #f5f5f5 0%, #ececec 10%, #ededed 100%);
+    /* Opera 11.10+ */
+    /*
+    background: -ms-linear-gradient(top, #f5f5f5 0%, #ececec 10%, #ededed 100%);
+    /* IE10+ */
+    /*
+    background: linear-gradient(to bottom, #f5f5f5 0%, #ececec 10%, #ededed 100%);
+    /* W3C */
+    /*
+    border-top: solid 1px #ededed;
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#ececec', GradientType=0);
+    /* IE6-9 */
+    margin-top: 0px;
+    position: relative;
+    left: 0px;
+    bottom: 0px;
+    text-align: center;
+    height: 40px;
+}
+.footer p {
+    color: #4a4a4a;
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding: 30px 0;
+    margin:0px;
+}
+.footer p a {
+    color: #9fcf64;
+}
+footer img {
+    display: none;
+}
+.navigation {
+    min-width: 1300px;
+    width: 100%;
+    /* margin-top: 46px; */
+    
+    border-top: solid 1px #d6d6d6;
+    border-bottom: solid 1px #d6d6d6;
+    height: 60px;
+    background: linear-gradient(to bottom, #f5f5f5 0%, #ececec 10%, #ededed 100%);
+}
+.navigation ul.breadcrumb {
+    padding: 0px;
+    margin: 0;
+    margin-left: 50px;
+    margin-top: 15px;
+    margin-right: 0px;
+    width: 1000px;
+}
+.navigation ul li {
+    list-style-type: none;
+}
+.navigation ul li a {
+    color: #4a4a4a;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 23px;
+    float: left;
+    margin-right: 10px;
+}
+.triangle {
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 3px 0 3px 5.2px;
+    border-color: transparent transparent transparent #4a4a4a;
+    float: left;
+    margin-top: 8px;
+    margin-right: 10px;
+}
+.top-section {
+    height: 100px;
+}
+body * {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #393c3d;
+    line-height: 22px;
+}
+.bg-photo{
+    background:url(../images/bg.jpg);
+    background-size: cover;
+    height: 79%;
+    text-align: center;
+}
+.bg-photo:before{
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: -0.25em; 
+}
+.loginText{
+    font-size: 17px;    
+}
+textarea, input { outline: none !important; -webkit-appearance:none !important; font-family: FontAwesome, "Open Sans", Verdana, sans-serif;}
+
+.greeting{
+    text-align: center;
+        color: #666;
+    font-size: 20px;
+    padding: 0 0 20px 0;
+    margin: 0;
+}

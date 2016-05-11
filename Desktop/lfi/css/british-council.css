@@ -1,0 +1,472 @@
+/*
+Designed and coded by Richard Morley. 
+http://www.rkmorley.co.uk
+*/
+/*Header*/
+.header{
+	padding: 30px 30px 30px 50px;
+}
+.header ul.log-in {
+    margin: 10px 0 0 0;
+}
+
+.sitelevel .header-1{
+    margin: 30px auto;
+    position: relative;
+    clear: both;	
+    background: white;
+    width: 93%;
+    padding: 20px 0 20px 30px;  
+    -webkit-border-radius: 3px;
+    border-radius: 3px;      
+}
+
+.sitelevel .header-1 h1{
+	font-size: 23px;
+}
+
+.header ul.log-in li, .header ul.log-in li a{
+    font-size: 16px;
+    color: #666;
+}
+
+.sitelevel .percentage-inner-box p {
+    font-size: 65px;
+    line-height: 70px;    
+    text-align: center;    
+}
+
+.box-arrow-up {
+    border-width: 0 5px 10px 5px;
+}
+/*End of Header*/
+
+
+/*Body*/
+.container_24 {
+	width:100%;
+}
+
+.container_24 .grid_24 {
+    margin: 0 auto;	
+    width: 1400px;    
+}
+
+.sitelevel .percentage-inner-box {
+    background-color: transparent;
+}
+/*End of Body*/
+
+/*Search*/
+.search-text{
+	height: 30px;
+	font-size: 16px;
+	float: right;
+	padding: 3px;
+	font-style: italic;
+	color: #666;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    float: left;
+    width: 55%;
+    margin: 0 0 25px 0;    
+}
+
+input.sb_search{
+	background:#7e7e7e;
+	    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    color: #FFF;
+    height: auto;
+    width:auto;
+	padding: 7px 20px;
+	float: left;    
+}
+
+.search-section{
+	clear: both;
+	position: relative;
+	height:auto;
+}
+
+.search-div{
+	float:right;
+}
+/*End of Search*/
+
+/*Body Elements*/
+.sitelevel h2 {
+    cursor: pointer;
+}
+
+.sitelevel .key {
+    position: relative;
+    top: -5px;
+    left: 60px;
+}
+
+.sitelevel .snapshot {
+	margin:0;
+	height: auto;
+    width: 60%;
+    border: 0;	
+}
+
+.sitelevel .snapshot img{
+	width:100%;
+	-webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #FFF;	
+}
+
+.first-section{
+    width: 95%;
+    margin: 0 auto;
+    clear: both;    
+}
+
+.sitelevel .score{
+	background: transparent;
+	border: 0;
+    height: 84px;    
+    width: 100%;
+    margin-left: 0px;
+}
+
+.sitelevel .gaugeinfo-inner-box{
+	border: 0;
+}
+
+.sitelevel .box{
+	background: #FFF;
+	border: 0;
+	width: 30%;
+    margin-left: 34px;    
+}
+
+.sitelevel h2, .sitelevel h3 a, .sitelevel h3 {
+	font-size: 16px;
+}
+
+.inner-box{
+	    width: auto;
+    height: auto;
+    padding: 20px;
+    background: #ececec;
+    border: 0;
+}
+
+.section-divider-p{
+    margin: 30px auto;
+    position: relative;
+    clear: both;
+    background: #666;
+    width: 93%;
+    padding: 20px 0 20px 30px;
+    color: #FFF;
+    font-size: 20px;
+    	    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.linechart{
+	clear: both;
+	width: 95%;
+	margin: 0 auto;
+	position: relative;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;        
+}
+
+.highcharts-title tspan{
+	font-size: 20px !important;
+}
+
+table.display thead th{
+	font-size: 16px;
+}
+
+table.display thead th{
+    padding: 30px 20px;
+}
+
+.content-info-table{
+    width: 95%;
+    position: relative;
+    clear: both;
+    margin: 0 auto;
+}
+
+.view-pages-button{
+    color: #FFF;
+    background: #00a7db;
+    padding: 13px 20px;
+    position: relative;
+    display: block;
+    width: 170px;
+    margin: 22px 0 30px 0;	
+    text-decoration: none;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}    
+
+
+.ut-box{
+    background: #FFF;
+    width: 340px;
+    height: auto;
+    float: left;
+    text-align: center;
+    padding: 40px 30px 45px 30px;
+    margin: 20px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;          
+}
+
+.ut-box img{
+    width: 120px;
+    height: 120px;
+}
+
+h3.ut-header{
+    font-size: 23px;
+    color: #1ba8d9;
+    font-weight: bold;
+    margin: 45px 0 0 0;
+}
+
+p.ut-subheader{
+    color: #666;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0 0 0;
+}
+
+p.ut-p{
+    margin: 30px 0; 
+}
+
+a.ut-btn{
+    height: auto;
+    color: #FFF;
+    text-decoration: none;  
+    display: block; 
+    background: #00a7db;
+    padding: 20px;  
+    -webkit-border-radius: 3px;
+    border-radius: 3px; 
+    width: 175px;
+    margin: 0 auto;    
+}
+
+.ut{
+    width: 100%;
+    margin: 0 auto;
+}
+a.ut-btn:hover{
+    background: #006f92;
+    -webkit-transition: background 400ms linear;
+    -moz-transition: background 400ms linear;
+    -o-transition: background 400ms linear;
+    -ms-transition: background 400ms linear;
+    transition: background 400ms linear;    
+}
+
+select {
+
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+
+}
+
+select::-ms-expand { /* for IE 11 */
+    display: none;
+}
+
+.drop-down{
+    float:right;
+    background: url(../images/arrows.svg) 90% / 8% no-repeat #00a7db;
+   padding: 10px 35px 10px 15px;
+    color: #FFF;
+    border: 0;
+    -webkit-border-radius: 3px;
+    border-radius: 3px; 
+    font-size: 16px;
+    margin: 0 0 20px 0;
+}
+
+
+.issues-dd{
+    width: 260px;
+    float:right;
+    background: url(../images/arrows.svg) 95% / 5% no-repeat #00a7db;
+   padding: 10px 35px 10px 15px;
+    color: #FFF;
+    border: 0;
+    -webkit-border-radius: 3px;
+    border-radius: 3px; 
+    font-size: 16px;
+    margin: 0 0 20px 0;    
+}
+
+.highcharts-title{
+    font-size: 16px;
+}
+
+table.display td {
+    border: 0;
+}
+
+table.display thead th{
+    border: 0;
+    background: #FFF;
+}
+
+table.display tr.even.gradeA{
+    background: #fff;
+}
+
+table.display tr.odd.gradeA{
+    background: #f9f9f9;
+}
+
+table.display td a{
+    color: #015CAE;
+}
+
+.fa{
+    color: #666;
+}
+
+span{
+    font-size: 16px;
+    color: #666;
+    display: inline-block;
+    vertical-align: middle;    
+}
+
+.fa-tachometer{
+    color: #FFF;
+}
+
+.fa-exclamation-triangle{
+    color: #FFF;
+}
+
+.content-icon{
+    color: #FFF;
+}
+
+.fa-cogs{
+    color: #FFF;
+}
+
+.sitelevel .score span{
+    font-size: 18px;
+}
+
+.sitelevel .score-inner-box p {
+    font-size: 75px;
+    padding: 25px;    
+}
+
+.sitelevel .score-inner-box{
+    border: 0;
+    clear: both;  
+    background: none;  
+    margin: 0;
+    width: auto;
+    height: auto;
+    float: none;
+}
+
+.sitelevel .score-inner-box p{
+    margin:0 auto;
+}
+
+.rank-title, .result-title{
+    clear: both;
+    padding: 20px;   
+    text-align: center;
+    font-size: 18px;
+}
+
+.sitelevel .score span {
+    margin: 0;
+
+}
+
+.sitelevel .gaugeinfo{
+    width: 100%;
+    height: auto;
+    margin: 75px 0px 45px 0px;
+    border: 0;
+    background: #FFF;
+    display: block;  
+}
+
+.sitelevel .gaugeinfo-inner-box{
+    width: auto;
+    height: auto;
+}
+
+.rank-box, .result-box{
+    float: left;
+    font-size: 18px;  
+    -webkit-border-radius: 5px;
+    border-radius: 5px;       
+}
+
+.sitelevel .percentage-inner-box{
+    border: 0;
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+.rank-box{
+    background: #FFF;
+    width: 175px;   
+    height: 157px;     
+}
+
+.result-box{
+    background: #FFF;
+    margin: 0 0 0 15px;
+    padding: 0;
+    width: 275px;
+    height: 157px;     
+}
+
+.uptime{
+    margin:20px 44px;
+}
+
+.search-engine{
+        margin-left: 35px;
+}
+
+.outlinks{
+    margin: 20px 0px 60px 20px;
+}
+
+.sitelevel .score-box{
+    margin-left: 66px;
+    position: relative;
+    float: left;
+    width: 35%;  
+}
+
+
+.score {
+    padding-right: 0;
+}
+/*End of Body Elements*/
+
+
+
+
+
+
+

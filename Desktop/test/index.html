@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="css/lfi_2.css" type="text/css">       
+        <link rel="stylesheet" href="css/header_2.css" type="text/css">
+        <link rel="stylesheet" href="css/createcampaign_2.css" type="text/css">   
+        <link rel="stylesheet" href="css/login.css" type="text/css">    
+        <link rel="shortcut icon" href="http://www.littleforest.co.uk/wp-content/uploads/2014/02/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+        <title>
+            LFi Login
+        </title>
+        <script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-45261269-1', 'littleforest.co.uk');
+            ga('send', 'pageview');
+
+        </script>
+        <style type="text/css">
+      table{
+                margin-bottom: 20px;
+                background: rgba(255, 255, 255, 0.9);
+                -webkit-border-radius: 3px;
+                -moz-border-radius: 3px;
+                border-radius: 3px;
+              }
+              h1{
+                  color: #4a4a4a;
+                  font-size: 48px;
+              }
+              table th{
+                color: #666666;
+                padding-top: 10px;
+                text-align: left;
+                padding-left: 15px;
+                font-size:19px;
+              }
+              table td {
+                  padding-left: 15px;
+                  
+              }
+              table td input{
+                -webkit-appearance:none;
+                padding-left: 5px;
+                height: 30px;
+                font-size: 22px;
+                margin-bottom: 20px;
+                width: 100%;
+                -webkit-border-radius: 3px;
+                -moz-border-radius: 3px;
+                border-radius: 3px;
+              }
+              tbody{    
+                  width: 95%;
+                  display: table;
+              }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <div class="top-section">
+                <img class="logo" src="images/littleforest_logo.jpg">
+            </div>
+        </div>
+        <div class="bg-photo col-md-12 col-xs-12">
+            <div class="col-md-6 col-sm-9">
+                <h1 style="text-align:center; color:#FFF;margin:20px 0 0 0">
+                    Welcome to LFi
+                </h1>
+                <p style="text-align:center; color: #FFF; font-size: 20px; padding: 28px 0 0 0;">Insights that drives web success</p>
+                <br>
+                <form method="post" action="/crawler/LoginServlet">
+                    <table style="width: 30%; padding: 20px 30px; display: inline-block; vertical-align: middle; margin: 30px 0 0 0; height: 280px;">
+                        <tbody>
+                            <tr>
+                                <th>
+                                <p class="greeting">Hello friend, please log in</p>
+                                <th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    Username
+                                </th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="text" name="username" class="textInput loginText" placeholder="&#xf007  Username">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    Password
+                                </th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="password" name="password" value="" class="textInput loginText" placeholder="&#xf084  Password">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div>
+                        <p class="submit">
+                            <input type="submit" name="commit" class="button" id="createCampaignButton" value="Login" style="width:205px; display: inline-block; vertical-align: middle; margin: 20px 0 0 0; height: 60px; font-size: 23px;">
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="footer col-md-12 col-xs-12">
+            <p>
+                Powered by <a href="http://www.littleforest.co.uk/" style="color: #65892a; text-decoration: none; font-weight: bold;">Little Forest</a> a tool that encourages continuous improvement towards web success.
+            </p>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="js/sticky-footer.js"></script>
+    </body>
+</html>

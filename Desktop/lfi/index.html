@@ -1,0 +1,2953 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Site Level</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="shortcut icon" href="http://www.littleforest.co.uk/wp-content/uploads/2014/02/favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="css/lfi_2.css" />
+        <link rel="stylesheet" href="css/header_2.css" />
+        <link rel="stylesheet" href="css/960_24_col.css" type="text/css" />
+        <link rel="stylesheet" href="css/sitelevel_2.css" type="text/css" />
+        <link rel="stylesheet" href="css/demo_table1_2.css" />
+        <link rel="stylesheet" href="css/dataDetails_2.css" type="text/css" />
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <script src="js/raphael.2.1.0.min.js"></script>
+        <script src="js/justgage.1.0.1.min.js"></script>
+        <script type="text/javascript" src="http://d3js.org/d3.v2.min.js"></script>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />      
+        <link rel="stylesheet" href="css/jquery.dropdown.css" />
+        <script src="js/jquery.dropdown.js" type="text/javascript"></script>
+        <script type="text/javascript" language="javascript" src="js/jquery.dataTables.js"></script>
+        <link rel="stylesheet" href="css/new-style.css">
+        <link rel="stylesheet" href="css/new-style-mobile.css">
+        <link rel="stylesheet" href="css/british-council.css">        
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>     
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">         
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-45261269-1', 'littleforest.co.uk');
+            ga('send', 'pageview');
+        </script>
+        <style>
+            .highcharts-title{color: #393c3d !important; fill: #393c3d !important;}
+            .highcharts-title tspan{font-size: 20px !important; font-weight: bold; clear: both !important; margin: 10px 0 !important;}
+        </style>
+        
+         
+        <script type="text/javascript">
+         $(function() {
+            $('.search-section').show();
+            $('.linechart #Total_Urls').highcharts({
+            chart: { type: 'spline' },
+            title: { text: 'Total URLs' },
+            subtitle: {text: ''},
+            xAxis: {
+                type: 'datetime',
+                dateTimeLabelFormats: {// don't display the dummy year
+                    month: '%e. %b',
+                    year: '%a'
+                }
+            },
+            yAxis: {
+                title: {text: 'Total Urls'},
+                min: 0
+            },
+            legend: {
+                itemStyle: {
+                    fontSize: '16px'
+                }
+            },
+            tooltip: {
+                formatter: function() {
+                return '<b>' + this.series.name + '</b><br/>' +
+                        Highcharts.dateFormat('%e. %b', this.x) + ': ' + this.y;
+                }
+            },
+            exporting: {
+                buttons: {
+                    contextButton: {
+                        text: 'Save as'
+                    }
+                }
+            },
+            series: [
+            
+                    { name: 'Hungary',
+                      data: [
+                        
+                        [Date.UTC(2014, 6, 1), 823   ]
+                        ,
+                        [Date.UTC(2015, 0, 7), 46   ]
+                        ,
+                        [Date.UTC(2015, 3, 8), 39   ]
+                        
+                      ]},
+                    
+                ]
+              });
+            });
+        </script>
+            
+        <script type="text/javascript">
+         $(function() {
+            $('.search-section').show();
+            $('.linechart #Overly_Dynamic_URL').highcharts({
+            chart: { type: 'spline' },
+            title: { text: 'Overly Dynamic URL' },
+            subtitle: {text: ''},
+            xAxis: {
+                type: 'datetime',
+                dateTimeLabelFormats: {// don't display the dummy year
+                    month: '%e. %b',
+                    year: '%a'
+                }
+            },
+            yAxis: {
+                title: {text: 'Overly Dynamic URL'},
+                min: 0
+            },
+            legend: {
+                itemStyle: {
+                    fontSize: '16px'
+                }
+            },
+            tooltip: {
+                formatter: function() {
+                return '<b>' + this.series.name + '</b><br/>' +
+                        Highcharts.dateFormat('%e. %b', this.x) + ': ' + this.y;
+                }
+            },
+            exporting: {
+                buttons: {
+                    contextButton: {
+                        text: 'Save as'
+                    }
+                }
+            },
+            series: [
+            
+                    { name: 'Hungary',
+                      data: [
+                        
+                        [Date.UTC(2014, 6, 1), 62   ]
+                        ,
+                        [Date.UTC(2015, 0, 7), 0   ]
+                        ,
+                        [Date.UTC(2015, 3, 8), 0   ]
+                        
+                      ]},
+                    
+                ]
+              });
+            });
+        </script>
+            
+        <script type="text/javascript">
+         $(function() {
+            $('.search-section').show();
+            $('.linechart #Total_Cookies').highcharts({
+            chart: { type: 'spline' },
+            title: { text: 'Total Cookies' },
+            subtitle: {text: ''},
+            xAxis: {
+                type: 'datetime',
+                dateTimeLabelFormats: {// don't display the dummy year
+                    month: '%e. %b',
+                    year: '%a'
+                }
+            },
+            yAxis: {
+                title: {text: 'Total Cookies'},
+                min: 0
+            },
+            legend: {
+                itemStyle: {
+                    fontSize: '16px'
+                }
+            },
+            tooltip: {
+                formatter: function() {
+                return '<b>' + this.series.name + '</b><br/>' +
+                        Highcharts.dateFormat('%e. %b', this.x) + ': ' + this.y;
+                }
+            },
+            exporting: {
+                buttons: {
+                    contextButton: {
+                        text: 'Save as'
+                    }
+                }
+            },
+            series: [
+            
+                    { name: 'Hungary',
+                      data: [
+                        
+                        [Date.UTC(2014, 6, 1), 0   ]
+                        ,
+                        [Date.UTC(2015, 0, 7), 5   ]
+                        ,
+                        [Date.UTC(2015, 3, 8), 4   ]
+                        
+                      ]},
+                    
+                ]
+              });
+            });
+        </script>
+            
+        <script type="text/javascript">
+         $(function() {
+            $('.search-section').show();
+            $('.linechart #Meta_Description_Missing').highcharts({
+            chart: { type: 'spline' },
+            title: { text: 'Meta Description Missing' },
+            subtitle: {text: ''},
+            xAxis: {
+                type: 'datetime',
+                dateTimeLabelFormats: {// don't display the dummy year
+                    month: '%e. %b',
+                    year: '%a'
+                }
+            },
+            yAxis: {
+                title: {text: 'Meta Description Missing'},
+                min: 0
+            },
+            legend: {
+                itemStyle: {
+                    fontSize: '16px'
+                }
+            },
+            tooltip: {
+                formatter: function() {
+                return '<b>' + this.series.name + '</b><br/>' +
+                        Highcharts.dateFormat('%e. %b', this.x) + ': ' + this.y;
+                }
+            },
+            exporting: {
+                buttons: {
+                    contextButton: {
+                        text: 'Save as'
+                    }
+                }
+            },
+            series: [
+            
+                    { name: 'Hungary',
+                      data: [
+                        
+                        [Date.UTC(2014, 6, 1), 21   ]
+                        ,
+                        [Date.UTC(2015, 0, 7), 0   ]
+                        ,
+                        [Date.UTC(2015, 3, 8), 0   ]
+                        
+                      ]},
+                    
+                ]
+              });
+            });
+        </script>
+            
+        <script type="text/javascript">
+         $(function() {
+            $('.search-section').show();
+            $('.linechart #Total_Javascripts').highcharts({
+            chart: { type: 'spline' },
+            title: { text: 'Total Javascripts' },
+            subtitle: {text: ''},
+            xAxis: {
+                type: 'datetime',
+                dateTimeLabelFormats: {// don't display the dummy year
+                    month: '%e. %b',
+                    year: '%a'
+                }
+            },
+            yAxis: {
+                title: {text: 'Total Javascripts'},
+                min: 0
+            },
+            legend: {
+                itemStyle: {
+                    fontSize: '16px'
+                }
+            },
+            tooltip: {
+                formatter: function() {
+                return '<b>' + this.series.name + '</b><br/>' +
+                        Highcharts.dateFormat('%e. %b', this.x) + ': ' + this.y;
+                }
+            },
+            exporting: {
+                buttons: {
+                    contextButton: {
+                        text: 'Save as'
+                    }
+                }
+            },
+            series: [
+            
+                    { name: 'Hungary',
+                      data: [
+                        
+                        [Date.UTC(2014, 6, 1), 126   ]
+                        ,
+                        [Date.UTC(2015, 0, 7), 9   ]
+                        ,
+                        [Date.UTC(2015, 3, 8), 7   ]
+                        
+                      ]},
+                    
+                ]
+              });
+            });
+        </script>
+            
+        <script type="text/javascript">
+         $(function() {
+            $('.search-section').show();
+            $('.linechart #Executable_Files').highcharts({
+            chart: { type: 'spline' },
+            title: { text: 'Executable Files' },
+            subtitle: {text: ''},
+            xAxis: {
+                type: 'datetime',
+                dateTimeLabelFormats: {// don't display the dummy year
+                    month: '%e. %b',
+                    year: '%a'
+                }
+            },
+            yAxis: {
+                title: {text: 'Executable Files'},
+                min: 0
+            },
+            legend: {
+                itemStyle: {
+                    fontSize: '16px'
+                }
+            },
+            tooltip: {
+                formatter: function() {
+                return '<b>' + this.series.name + '</b><br/>' +
+                        Highcharts.dateFormat('%e. %b', this.x) + ': ' + this.y;
+                }
+            },
+            exporting: {
+                buttons: {
+                    contextButton: {
+                        text: 'Save as'
+                    }
+                }
+            },
+            series: [
+            
+                    { name: 'Hungary',
+                      data: [
+                        
+                        [Date.UTC(2014, 6, 1), 0   ]
+                        ,
+                        [Date.UTC(2015, 0, 7), 0   ]
+                        ,
+                        [Date.UTC(2015, 3, 8), 0   ]
+                        
+                      ]},
+                    
+                ]
+              });
+            });
+        </script>
+            
+        <script type="text/javascript">
+         $(function() {
+            $('.search-section').show();
+            $('.linechart #Title_Missing').highcharts({
+            chart: { type: 'spline' },
+            title: { text: 'Title Missing' },
+            subtitle: {text: ''},
+            xAxis: {
+                type: 'datetime',
+                dateTimeLabelFormats: {// don't display the dummy year
+                    month: '%e. %b',
+                    year: '%a'
+                }
+            },
+            yAxis: {
+                title: {text: 'Title Missing'},
+                min: 0
+            },
+            legend: {
+                itemStyle: {
+                    fontSize: '16px'
+                }
+            },
+            tooltip: {
+                formatter: function() {
+                return '<b>' + this.series.name + '</b><br/>' +
+                        Highcharts.dateFormat('%e. %b', this.x) + ': ' + this.y;
+                }
+            },
+            exporting: {
+                buttons: {
+                    contextButton: {
+                        text: 'Save as'
+                    }
+                }
+            },
+            series: [
+            
+                    { name: 'Hungary',
+                      data: [
+                        
+                        [Date.UTC(2014, 6, 1), 20   ]
+                        ,
+                        [Date.UTC(2015, 0, 7), 0   ]
+                        ,
+                        [Date.UTC(2015, 3, 8), 0   ]
+                        
+                      ]},
+                    
+                ]
+              });
+            });
+        </script>
+            
+        <script type="text/javascript">
+         $(function() {
+            $('.search-section').show();
+            $('.linechart #Duplicate_Page_Title').highcharts({
+            chart: { type: 'spline' },
+            title: { text: 'Duplicate Page Title' },
+            subtitle: {text: ''},
+            xAxis: {
+                type: 'datetime',
+                dateTimeLabelFormats: {// don't display the dummy year
+                    month: '%e. %b',
+                    year: '%a'
+                }
+            },
+            yAxis: {
+                title: {text: 'Duplicate Page Title'},
+                min: 0
+            },
+            legend: {
+                itemStyle: {
+                    fontSize: '16px'
+                }
+            },
+            tooltip: {
+                formatter: function() {
+                return '<b>' + this.series.name + '</b><br/>' +
+                        Highcharts.dateFormat('%e. %b', this.x) + ': ' + this.y;
+                }
+            },
+            exporting: {
+                buttons: {
+                    contextButton: {
+                        text: 'Save as'
+                    }
+                }
+            },
+            series: [
+            
+                    { name: 'Hungary',
+                      data: [
+                        
+                        [Date.UTC(2014, 6, 1), 242   ]
+                        ,
+                        [Date.UTC(2015, 0, 7), 26   ]
+                        ,
+                        [Date.UTC(2015, 3, 8), 20   ]
+                        
+                      ]},
+                    
+                ]
+              });
+            });
+        </script>
+            
+        <script type="text/javascript">
+         $(function() {
+            $('.search-section').show();
+            $('.linechart #Flash_Files').highcharts({
+            chart: { type: 'spline' },
+            title: { text: 'Flash Files' },
+            subtitle: {text: ''},
+            xAxis: {
+                type: 'datetime',
+                dateTimeLabelFormats: {// don't display the dummy year
+                    month: '%e. %b',
+                    year: '%a'
+                }
+            },
+            yAxis: {
+                title: {text: 'Flash Files'},
+                min: 0
+            },
+            legend: {
+                itemStyle: {
+                    fontSize: '16px'
+                }
+            },
+            tooltip: {
+                formatter: function() {
+                return '<b>' + this.series.name + '</b><br/>' +
+                        Highcharts.dateFormat('%e. %b', this.x) + ': ' + this.y;
+                }
+            },
+            exporting: {
+                buttons: {
+                    contextButton: {
+                        text: 'Save as'
+                    }
+                }
+            },
+            series: [
+            
+                    { name: 'Hungary',
+                      data: [
+                        
+                        [Date.UTC(2014, 6, 1), 0   ]
+                        ,
+                        [Date.UTC(2015, 0, 7), 0   ]
+                        ,
+                        [Date.UTC(2015, 3, 8), 0   ]
+                        
+                      ]},
+                    
+                ]
+              });
+            });
+        </script>
+            
+        <script type="text/javascript">
+         $(function() {
+            $('.search-section').show();
+            $('.linechart #Total_Videos').highcharts({
+            chart: { type: 'spline' },
+            title: { text: 'Total Videos' },
+            subtitle: {text: ''},
+            xAxis: {
+                type: 'datetime',
+                dateTimeLabelFormats: {// don't display the dummy year
+                    month: '%e. %b',
+                    year: '%a'
+                }
+            },
+            yAxis: {
+                title: {text: 'Total Videos'},
+                min: 0
+            },
+            legend: {
+                itemStyle: {
+                    fontSize: '16px'
+                }
+            },
+            tooltip: {
+                formatter: function() {
+                return '<b>' + this.series.name + '</b><br/>' +
+                        Highcharts.dateFormat('%e. %b', this.x) + ': ' + this.y;
+                }
+            },
+            exporting: {
+                buttons: {
+                    contextButton: {
+                        text: 'Save as'
+                    }
+                }
+            },
+            series: [
+            
+                    { name: 'Hungary',
+                      data: [
+                        
+                        [Date.UTC(2014, 6, 1), 5   ]
+                        ,
+                        [Date.UTC(2015, 0, 7), 0   ]
+                        ,
+                        [Date.UTC(2015, 3, 8), 1   ]
+                        
+                      ]},
+                    
+                ]
+              });
+            });
+        </script>
+            
+        <script type="text/javascript">
+         $(function() {
+            $('.search-section').show();
+            $('.linechart #Client_Errors').highcharts({
+            chart: { type: 'spline' },
+            title: { text: 'Client Errors' },
+            subtitle: {text: ''},
+            xAxis: {
+                type: 'datetime',
+                dateTimeLabelFormats: {// don't display the dummy year
+                    month: '%e. %b',
+                    year: '%a'
+                }
+            },
+            yAxis: {
+                title: {text: 'Client Errors'},
+                min: 0
+            },
+            legend: {
+                itemStyle: {
+                    fontSize: '16px'
+                }
+            },
+            tooltip: {
+                formatter: function() {
+                return '<b>' + this.series.name + '</b><br/>' +
+                        Highcharts.dateFormat('%e. %b', this.x) + ': ' + this.y;
+                }
+            },
+            exporting: {
+                buttons: {
+                    contextButton: {
+                        text: 'Save as'
+                    }
+                }
+            },
+            series: [
+            
+                    { name: 'Hungary',
+                      data: [
+                        
+                        [Date.UTC(2014, 6, 1), 0   ]
+                        ,
+                        [Date.UTC(2015, 0, 7), 0   ]
+                        ,
+                        [Date.UTC(2015, 3, 8), 0   ]
+                        
+                      ]},
+                    
+                ]
+              });
+            });
+        </script>
+            
+        <script type="text/javascript">
+         $(function() {
+            $('.search-section').show();
+            $('.linechart #Total_CSS').highcharts({
+            chart: { type: 'spline' },
+            title: { text: 'Total CSS' },
+            subtitle: {text: ''},
+            xAxis: {
+                type: 'datetime',
+                dateTimeLabelFormats: {// don't display the dummy year
+                    month: '%e. %b',
+                    year: '%a'
+                }
+            },
+            yAxis: {
+                title: {text: 'Total CSS'},
+                min: 0
+            },
+            legend: {
+                itemStyle: {
+                    fontSize: '16px'
+                }
+            },
+            tooltip: {
+                formatter: function() {
+                return '<b>' + this.series.name + '</b><br/>' +
+                        Highcharts.dateFormat('%e. %b', this.x) + ': ' + this.y;
+                }
+            },
+            exporting: {
+                buttons: {
+                    contextButton: {
+                        text: 'Save as'
+                    }
+                }
+            },
+            series: [
+            
+                    { name: 'Hungary',
+                      data: [
+                        
+                        [Date.UTC(2014, 6, 1), 112   ]
+                        ,
+                        [Date.UTC(2015, 0, 7), 10   ]
+                        ,
+                        [Date.UTC(2015, 3, 8), 8   ]
+                        
+                      ]},
+                    
+                ]
+              });
+            });
+        </script>
+            
+        <script type="text/javascript">
+         $(function() {
+            $('.search-section').show();
+            $('.linechart #Too_Many_on_Page_Links').highcharts({
+            chart: { type: 'spline' },
+            title: { text: 'Too Many on Page Links' },
+            subtitle: {text: ''},
+            xAxis: {
+                type: 'datetime',
+                dateTimeLabelFormats: {// don't display the dummy year
+                    month: '%e. %b',
+                    year: '%a'
+                }
+            },
+            yAxis: {
+                title: {text: 'Too Many on Page Links'},
+                min: 0
+            },
+            legend: {
+                itemStyle: {
+                    fontSize: '16px'
+                }
+            },
+            tooltip: {
+                formatter: function() {
+                return '<b>' + this.series.name + '</b><br/>' +
+                        Highcharts.dateFormat('%e. %b', this.x) + ': ' + this.y;
+                }
+            },
+            exporting: {
+                buttons: {
+                    contextButton: {
+                        text: 'Save as'
+                    }
+                }
+            },
+            series: [
+            
+                    { name: 'Hungary',
+                      data: [
+                        
+                        [Date.UTC(2014, 6, 1), 31   ]
+                        ,
+                        [Date.UTC(2015, 0, 7), 0   ]
+                        ,
+                        [Date.UTC(2015, 3, 8), 0   ]
+                        
+                      ]},
+                    
+                ]
+              });
+            });
+        </script>
+            
+        <script type="text/javascript">
+         $(function() {
+            $('.search-section').show();
+            $('.linechart #Scores_').highcharts({
+            chart: { type: 'spline' },
+            title: { text: 'Scores ' },
+            subtitle: {text: ''},
+            xAxis: {
+                type: 'datetime',
+                dateTimeLabelFormats: {// don't display the dummy year
+                    month: '%e. %b',
+                    year: '%a'
+                }
+            },
+            yAxis: {
+                title: {text: 'Scores '},
+                min: 0
+            },
+            legend: {
+                itemStyle: {
+                    fontSize: '16px'
+                }
+            },
+            tooltip: {
+                formatter: function() {
+                return '<b>' + this.series.name + '</b><br/>' +
+                        Highcharts.dateFormat('%e. %b', this.x) + ': ' + this.y;
+                }
+            },
+            exporting: {
+                buttons: {
+                    contextButton: {
+                        text: 'Save as'
+                    }
+                }
+            },
+            series: [
+            
+                    { name: 'Overall Score',
+                      data: [
+                        
+                        [Date.UTC(2014, 6, 1), 42   ]
+                        ,
+                        [Date.UTC(2015, 0, 7), 68   ]
+                        ,
+                        [Date.UTC(2015, 3, 8), 70   ]
+                        
+                      ]},
+                    
+                    { name: 'Content',
+                      data: [
+                        
+                        [Date.UTC(2014, 6, 1), 52   ]
+                        ,
+                        [Date.UTC(2015, 0, 7), 67   ]
+                        ,
+                        [Date.UTC(2015, 3, 8), 67   ]
+                        
+                      ]},
+                    
+                    { name: 'Search',
+                      data: [
+                        
+                        [Date.UTC(2014, 6, 1), 0   ]
+                        ,
+                        [Date.UTC(2015, 0, 7), 43   ]
+                        ,
+                        [Date.UTC(2015, 3, 8), 50   ]
+                        
+                      ]},
+                    
+                    { name: 'Infrastructure',
+                      data: [
+                        
+                        [Date.UTC(2014, 6, 1), 29   ]
+                        ,
+                        [Date.UTC(2015, 0, 7), 82   ]
+                        ,
+                        [Date.UTC(2015, 3, 8), 82   ]
+                        
+                      ]},
+                    
+                    { name: 'Governance',
+                      data: [
+                        
+                        [Date.UTC(2014, 6, 1), 46   ]
+                        ,
+                        [Date.UTC(2015, 0, 7), 72   ]
+                        ,
+                        [Date.UTC(2015, 3, 8), 72   ]
+                        
+                      ]},
+                    
+                ]
+              });
+            });
+        </script>
+            
+        <script type="text/javascript">
+         $(function() {
+            $('.search-section').show();
+            $('.linechart #Underscores_in_URL').highcharts({
+            chart: { type: 'spline' },
+            title: { text: 'Underscores in URL' },
+            subtitle: {text: ''},
+            xAxis: {
+                type: 'datetime',
+                dateTimeLabelFormats: {// don't display the dummy year
+                    month: '%e. %b',
+                    year: '%a'
+                }
+            },
+            yAxis: {
+                title: {text: 'Underscores in URL'},
+                min: 0
+            },
+            legend: {
+                itemStyle: {
+                    fontSize: '16px'
+                }
+            },
+            tooltip: {
+                formatter: function() {
+                return '<b>' + this.series.name + '</b><br/>' +
+                        Highcharts.dateFormat('%e. %b', this.x) + ': ' + this.y;
+                }
+            },
+            exporting: {
+                buttons: {
+                    contextButton: {
+                        text: 'Save as'
+                    }
+                }
+            },
+            series: [
+            
+                    { name: 'Hungary',
+                      data: [
+                        
+                        [Date.UTC(2014, 6, 1), 36   ]
+                        ,
+                        [Date.UTC(2015, 0, 7), 2   ]
+                        ,
+                        [Date.UTC(2015, 3, 8), 2   ]
+                        
+                      ]},
+                    
+                ]
+              });
+            });
+        </script>
+            
+        <script type="text/javascript">
+         $(function() {
+            $('.search-section').show();
+            $('.linechart #Word_Documents').highcharts({
+            chart: { type: 'spline' },
+            title: { text: 'Word Documents' },
+            subtitle: {text: ''},
+            xAxis: {
+                type: 'datetime',
+                dateTimeLabelFormats: {// don't display the dummy year
+                    month: '%e. %b',
+                    year: '%a'
+                }
+            },
+            yAxis: {
+                title: {text: 'Word Documents'},
+                min: 0
+            },
+            legend: {
+                itemStyle: {
+                    fontSize: '16px'
+                }
+            },
+            tooltip: {
+                formatter: function() {
+                return '<b>' + this.series.name + '</b><br/>' +
+                        Highcharts.dateFormat('%e. %b', this.x) + ': ' + this.y;
+                }
+            },
+            exporting: {
+                buttons: {
+                    contextButton: {
+                        text: 'Save as'
+                    }
+                }
+            },
+            series: [
+            
+                    { name: 'Hungary',
+                      data: [
+                        
+                        [Date.UTC(2014, 6, 1), 0   ]
+                        ,
+                        [Date.UTC(2015, 0, 7), 0   ]
+                        ,
+                        [Date.UTC(2015, 3, 8), 0   ]
+                        
+                      ]},
+                    
+                ]
+              });
+            });
+        </script>
+            
+        <script type="text/javascript">
+         $(function() {
+            $('.search-section').show();
+            $('.linechart #Canonical_Links').highcharts({
+            chart: { type: 'spline' },
+            title: { text: 'Canonical Links' },
+            subtitle: {text: ''},
+            xAxis: {
+                type: 'datetime',
+                dateTimeLabelFormats: {// don't display the dummy year
+                    month: '%e. %b',
+                    year: '%a'
+                }
+            },
+            yAxis: {
+                title: {text: 'Canonical Links'},
+                min: 0
+            },
+            legend: {
+                itemStyle: {
+                    fontSize: '16px'
+                }
+            },
+            tooltip: {
+                formatter: function() {
+                return '<b>' + this.series.name + '</b><br/>' +
+                        Highcharts.dateFormat('%e. %b', this.x) + ': ' + this.y;
+                }
+            },
+            exporting: {
+                buttons: {
+                    contextButton: {
+                        text: 'Save as'
+                    }
+                }
+            },
+            series: [
+            
+                    { name: 'Hungary',
+                      data: [
+                        
+                        [Date.UTC(2014, 6, 1), 0   ]
+                        ,
+                        [Date.UTC(2015, 0, 7), 0   ]
+                        ,
+                        [Date.UTC(2015, 3, 8), 0   ]
+                        
+                      ]},
+                    
+                ]
+              });
+            });
+        </script>
+            
+        <script type="text/javascript">
+         $(function() {
+            $('.search-section').show();
+            $('.linechart #Total_PDFs').highcharts({
+            chart: { type: 'spline' },
+            title: { text: 'Total PDFs' },
+            subtitle: {text: ''},
+            xAxis: {
+                type: 'datetime',
+                dateTimeLabelFormats: {// don't display the dummy year
+                    month: '%e. %b',
+                    year: '%a'
+                }
+            },
+            yAxis: {
+                title: {text: 'Total PDFs'},
+                min: 0
+            },
+            legend: {
+                itemStyle: {
+                    fontSize: '16px'
+                }
+            },
+            tooltip: {
+                formatter: function() {
+                return '<b>' + this.series.name + '</b><br/>' +
+                        Highcharts.dateFormat('%e. %b', this.x) + ': ' + this.y;
+                }
+            },
+            exporting: {
+                buttons: {
+                    contextButton: {
+                        text: 'Save as'
+                    }
+                }
+            },
+            series: [
+            
+                    { name: 'Hungary',
+                      data: [
+                        
+                        [Date.UTC(2014, 6, 1), 74   ]
+                        ,
+                        [Date.UTC(2015, 0, 7), 0   ]
+                        ,
+                        [Date.UTC(2015, 3, 8), 3   ]
+                        
+                      ]},
+                    
+                ]
+              });
+            });
+        </script>
+            
+        <script type="text/javascript">
+         $(function() {
+            $('.search-section').show();
+            $('.linechart #Powerpoints').highcharts({
+            chart: { type: 'spline' },
+            title: { text: 'Powerpoints' },
+            subtitle: {text: ''},
+            xAxis: {
+                type: 'datetime',
+                dateTimeLabelFormats: {// don't display the dummy year
+                    month: '%e. %b',
+                    year: '%a'
+                }
+            },
+            yAxis: {
+                title: {text: 'Powerpoints'},
+                min: 0
+            },
+            legend: {
+                itemStyle: {
+                    fontSize: '16px'
+                }
+            },
+            tooltip: {
+                formatter: function() {
+                return '<b>' + this.series.name + '</b><br/>' +
+                        Highcharts.dateFormat('%e. %b', this.x) + ': ' + this.y;
+                }
+            },
+            exporting: {
+                buttons: {
+                    contextButton: {
+                        text: 'Save as'
+                    }
+                }
+            },
+            series: [
+            
+                    { name: 'Hungary',
+                      data: [
+                        
+                        [Date.UTC(2014, 6, 1), 0   ]
+                        ,
+                        [Date.UTC(2015, 0, 7), 0   ]
+                        ,
+                        [Date.UTC(2015, 3, 8), 0   ]
+                        
+                      ]},
+                    
+                ]
+              });
+            });
+        </script>
+            
+        <script type="text/javascript">
+         $(function() {
+            $('.search-section').show();
+            $('.linechart #Server_Errors').highcharts({
+            chart: { type: 'spline' },
+            title: { text: 'Server Errors' },
+            subtitle: {text: ''},
+            xAxis: {
+                type: 'datetime',
+                dateTimeLabelFormats: {// don't display the dummy year
+                    month: '%e. %b',
+                    year: '%a'
+                }
+            },
+            yAxis: {
+                title: {text: 'Server Errors'},
+                min: 0
+            },
+            legend: {
+                itemStyle: {
+                    fontSize: '16px'
+                }
+            },
+            tooltip: {
+                formatter: function() {
+                return '<b>' + this.series.name + '</b><br/>' +
+                        Highcharts.dateFormat('%e. %b', this.x) + ': ' + this.y;
+                }
+            },
+            exporting: {
+                buttons: {
+                    contextButton: {
+                        text: 'Save as'
+                    }
+                }
+            },
+            series: [
+            
+                    { name: 'Hungary',
+                      data: [
+                        
+                        [Date.UTC(2014, 6, 1), 0   ]
+                        ,
+                        [Date.UTC(2015, 0, 7), 0   ]
+                        ,
+                        [Date.UTC(2015, 3, 8), 0   ]
+                        
+                      ]},
+                    
+                ]
+              });
+            });
+        </script>
+            
+        <script type="text/javascript">
+         $(function() {
+            $('.search-section').show();
+            $('.linechart #New_Pages').highcharts({
+            chart: { type: 'spline' },
+            title: { text: 'New Pages' },
+            subtitle: {text: ''},
+            xAxis: {
+                type: 'datetime',
+                dateTimeLabelFormats: {// don't display the dummy year
+                    month: '%e. %b',
+                    year: '%a'
+                }
+            },
+            yAxis: {
+                title: {text: 'New Pages'},
+                min: 0
+            },
+            legend: {
+                itemStyle: {
+                    fontSize: '16px'
+                }
+            },
+            tooltip: {
+                formatter: function() {
+                return '<b>' + this.series.name + '</b><br/>' +
+                        Highcharts.dateFormat('%e. %b', this.x) + ': ' + this.y;
+                }
+            },
+            exporting: {
+                buttons: {
+                    contextButton: {
+                        text: 'Save as'
+                    }
+                }
+            },
+            series: [
+            
+                    { name: 'Hungary',
+                      data: [
+                        
+                        [Date.UTC(2014, 6, 1), 0   ]
+                        ,
+                        [Date.UTC(2015, 0, 7), 20   ]
+                        ,
+                        [Date.UTC(2015, 3, 8), 10   ]
+                        
+                      ]},
+                    
+                ]
+              });
+            });
+        </script>
+            
+        <script type="text/javascript">
+         $(function() {
+            $('.search-section').show();
+            $('.linechart #Total_Emails').highcharts({
+            chart: { type: 'spline' },
+            title: { text: 'Total Emails' },
+            subtitle: {text: ''},
+            xAxis: {
+                type: 'datetime',
+                dateTimeLabelFormats: {// don't display the dummy year
+                    month: '%e. %b',
+                    year: '%a'
+                }
+            },
+            yAxis: {
+                title: {text: 'Total Emails'},
+                min: 0
+            },
+            legend: {
+                itemStyle: {
+                    fontSize: '16px'
+                }
+            },
+            tooltip: {
+                formatter: function() {
+                return '<b>' + this.series.name + '</b><br/>' +
+                        Highcharts.dateFormat('%e. %b', this.x) + ': ' + this.y;
+                }
+            },
+            exporting: {
+                buttons: {
+                    contextButton: {
+                        text: 'Save as'
+                    }
+                }
+            },
+            series: [
+            
+                    { name: 'Hungary',
+                      data: [
+                        
+                        [Date.UTC(2014, 6, 1), 0   ]
+                        ,
+                        [Date.UTC(2015, 0, 7), 0   ]
+                        ,
+                        [Date.UTC(2015, 3, 8), 0   ]
+                        
+                      ]},
+                    
+                ]
+              });
+            });
+        </script>
+            
+        <script type="text/javascript">
+         $(function() {
+            $('.search-section').show();
+            $('.linechart #Excel_Files').highcharts({
+            chart: { type: 'spline' },
+            title: { text: 'Excel Files' },
+            subtitle: {text: ''},
+            xAxis: {
+                type: 'datetime',
+                dateTimeLabelFormats: {// don't display the dummy year
+                    month: '%e. %b',
+                    year: '%a'
+                }
+            },
+            yAxis: {
+                title: {text: 'Excel Files'},
+                min: 0
+            },
+            legend: {
+                itemStyle: {
+                    fontSize: '16px'
+                }
+            },
+            tooltip: {
+                formatter: function() {
+                return '<b>' + this.series.name + '</b><br/>' +
+                        Highcharts.dateFormat('%e. %b', this.x) + ': ' + this.y;
+                }
+            },
+            exporting: {
+                buttons: {
+                    contextButton: {
+                        text: 'Save as'
+                    }
+                }
+            },
+            series: [
+            
+                    { name: 'Hungary',
+                      data: [
+                        
+                        [Date.UTC(2014, 6, 1), 0   ]
+                        ,
+                        [Date.UTC(2015, 0, 7), 0   ]
+                        ,
+                        [Date.UTC(2015, 3, 8), 0   ]
+                        
+                      ]},
+                    
+                ]
+              });
+            });
+        </script>
+            
+        <script type="text/javascript">
+         $(function() {
+            $('.search-section').show();
+            $('.linechart #Meta_Refresh').highcharts({
+            chart: { type: 'spline' },
+            title: { text: 'Meta Refresh' },
+            subtitle: {text: ''},
+            xAxis: {
+                type: 'datetime',
+                dateTimeLabelFormats: {// don't display the dummy year
+                    month: '%e. %b',
+                    year: '%a'
+                }
+            },
+            yAxis: {
+                title: {text: 'Meta Refresh'},
+                min: 0
+            },
+            legend: {
+                itemStyle: {
+                    fontSize: '16px'
+                }
+            },
+            tooltip: {
+                formatter: function() {
+                return '<b>' + this.series.name + '</b><br/>' +
+                        Highcharts.dateFormat('%e. %b', this.x) + ': ' + this.y;
+                }
+            },
+            exporting: {
+                buttons: {
+                    contextButton: {
+                        text: 'Save as'
+                    }
+                }
+            },
+            series: [
+            
+                    { name: 'Hungary',
+                      data: [
+                        
+                        [Date.UTC(2014, 6, 1), 0   ]
+                        ,
+                        [Date.UTC(2015, 0, 7), 0   ]
+                        ,
+                        [Date.UTC(2015, 3, 8), 0   ]
+                        
+                      ]},
+                    
+                ]
+              });
+            });
+        </script>
+            
+        <script type="text/javascript">
+         $(function() {
+            $('.search-section').show();
+            $('.linechart #Title_Too_Short').highcharts({
+            chart: { type: 'spline' },
+            title: { text: 'Title Too Short' },
+            subtitle: {text: ''},
+            xAxis: {
+                type: 'datetime',
+                dateTimeLabelFormats: {// don't display the dummy year
+                    month: '%e. %b',
+                    year: '%a'
+                }
+            },
+            yAxis: {
+                title: {text: 'Title Too Short'},
+                min: 0
+            },
+            legend: {
+                itemStyle: {
+                    fontSize: '16px'
+                }
+            },
+            tooltip: {
+                formatter: function() {
+                return '<b>' + this.series.name + '</b><br/>' +
+                        Highcharts.dateFormat('%e. %b', this.x) + ': ' + this.y;
+                }
+            },
+            exporting: {
+                buttons: {
+                    contextButton: {
+                        text: 'Save as'
+                    }
+                }
+            },
+            series: [
+            
+                    { name: 'Hungary',
+                      data: [
+                        
+                        [Date.UTC(2014, 6, 1), 577   ]
+                        ,
+                        [Date.UTC(2015, 0, 7), 20   ]
+                        ,
+                        [Date.UTC(2015, 3, 8), 19   ]
+                        
+                      ]},
+                    
+                ]
+              });
+            });
+        </script>
+            
+        <script type="text/javascript">
+         $(function() {
+            $('.search-section').show();
+            $('.linechart #Javascript_Errors').highcharts({
+            chart: { type: 'spline' },
+            title: { text: 'Javascript Errors' },
+            subtitle: {text: ''},
+            xAxis: {
+                type: 'datetime',
+                dateTimeLabelFormats: {// don't display the dummy year
+                    month: '%e. %b',
+                    year: '%a'
+                }
+            },
+            yAxis: {
+                title: {text: 'Javascript Errors'},
+                min: 0
+            },
+            legend: {
+                itemStyle: {
+                    fontSize: '16px'
+                }
+            },
+            tooltip: {
+                formatter: function() {
+                return '<b>' + this.series.name + '</b><br/>' +
+                        Highcharts.dateFormat('%e. %b', this.x) + ': ' + this.y;
+                }
+            },
+            exporting: {
+                buttons: {
+                    contextButton: {
+                        text: 'Save as'
+                    }
+                }
+            },
+            series: [
+            
+                    { name: 'Hungary',
+                      data: [
+                        
+                        [Date.UTC(2014, 6, 1), 0   ]
+                        ,
+                        [Date.UTC(2015, 0, 7), 0   ]
+                        ,
+                        [Date.UTC(2015, 3, 8), 0   ]
+                        
+                      ]},
+                    
+                ]
+              });
+            });
+        </script>
+            
+        <script type="text/javascript">
+         $(function() {
+            $('.search-section').show();
+            $('.linechart #Redirect_Pages').highcharts({
+            chart: { type: 'spline' },
+            title: { text: 'Redirect Pages' },
+            subtitle: {text: ''},
+            xAxis: {
+                type: 'datetime',
+                dateTimeLabelFormats: {// don't display the dummy year
+                    month: '%e. %b',
+                    year: '%a'
+                }
+            },
+            yAxis: {
+                title: {text: 'Redirect Pages'},
+                min: 0
+            },
+            legend: {
+                itemStyle: {
+                    fontSize: '16px'
+                }
+            },
+            tooltip: {
+                formatter: function() {
+                return '<b>' + this.series.name + '</b><br/>' +
+                        Highcharts.dateFormat('%e. %b', this.x) + ': ' + this.y;
+                }
+            },
+            exporting: {
+                buttons: {
+                    contextButton: {
+                        text: 'Save as'
+                    }
+                }
+            },
+            series: [
+            
+                    { name: 'Hungary',
+                      data: [
+                        
+                        [Date.UTC(2014, 6, 1), 490   ]
+                        ,
+                        [Date.UTC(2015, 0, 7), 20   ]
+                        ,
+                        [Date.UTC(2015, 3, 8), 19   ]
+                        
+                      ]},
+                    
+                ]
+              });
+            });
+        </script>
+            
+        <script type="text/javascript">
+         $(function() {
+            $('.search-section').show();
+            $('.linechart #Total_Images').highcharts({
+            chart: { type: 'spline' },
+            title: { text: 'Total Images' },
+            subtitle: {text: ''},
+            xAxis: {
+                type: 'datetime',
+                dateTimeLabelFormats: {// don't display the dummy year
+                    month: '%e. %b',
+                    year: '%a'
+                }
+            },
+            yAxis: {
+                title: {text: 'Total Images'},
+                min: 0
+            },
+            legend: {
+                itemStyle: {
+                    fontSize: '16px'
+                }
+            },
+            tooltip: {
+                formatter: function() {
+                return '<b>' + this.series.name + '</b><br/>' +
+                        Highcharts.dateFormat('%e. %b', this.x) + ': ' + this.y;
+                }
+            },
+            exporting: {
+                buttons: {
+                    contextButton: {
+                        text: 'Save as'
+                    }
+                }
+            },
+            series: [
+            
+                    { name: 'Hungary',
+                      data: [
+                        
+                        [Date.UTC(2014, 6, 1), 869   ]
+                        ,
+                        [Date.UTC(2015, 0, 7), 76   ]
+                        ,
+                        [Date.UTC(2015, 3, 8), 74   ]
+                        
+                      ]},
+                    
+                ]
+              });
+            });
+        </script>
+            
+        <script type="text/javascript">
+         $(function() {
+            $('.search-section').show();
+            $('.linechart #Title_Too_Long').highcharts({
+            chart: { type: 'spline' },
+            title: { text: 'Title Too Long' },
+            subtitle: {text: ''},
+            xAxis: {
+                type: 'datetime',
+                dateTimeLabelFormats: {// don't display the dummy year
+                    month: '%e. %b',
+                    year: '%a'
+                }
+            },
+            yAxis: {
+                title: {text: 'Title Too Long'},
+                min: 0
+            },
+            legend: {
+                itemStyle: {
+                    fontSize: '16px'
+                }
+            },
+            tooltip: {
+                formatter: function() {
+                return '<b>' + this.series.name + '</b><br/>' +
+                        Highcharts.dateFormat('%e. %b', this.x) + ': ' + this.y;
+                }
+            },
+            exporting: {
+                buttons: {
+                    contextButton: {
+                        text: 'Save as'
+                    }
+                }
+            },
+            series: [
+            
+                    { name: 'Hungary',
+                      data: [
+                        
+                        [Date.UTC(2014, 6, 1), 1   ]
+                        ,
+                        [Date.UTC(2015, 0, 7), 0   ]
+                        ,
+                        [Date.UTC(2015, 3, 8), 0   ]
+                        
+                      ]},
+                    
+                ]
+              });
+            });
+        </script>
+            
+        <style>
+            table.display td {
+                font-size: 16px;
+                padding: 3px 3px;
+                text-align: center;    
+            }
+            table.display td.center a
+            { 
+             color:#015CAE;
+             cursor: pointer; 
+            }
+        </style>
+    </head>
+    <body>
+        
+
+
+
+
+        <div class="header">
+            <div class="top-section">
+            
+             <img class="logo" src="images/BritishCouncil.png">
+            
+            <ul class="log-in">
+                
+                <li><i class="fa fa-user" style="color:#666"></i>&nbsp;Hello British Council</li> 
+                
+                                    <li><a href="/crawler/LogoutServlet"><i class="fa fa-sign-out" style="color: #666"></i>&nbspLog out</a></li> 
+                            
+                
+            </ul>
+
+            </div>
+            
+        </div>
+
+
+        <div class="navigation">
+                <ul class="breadcrumb">
+                    <li><a href="/crawler/CampaignListServlet"><i class="fa fa-home"></i>&nbspProject List</a> <div class="triangle">&nbsp;</div></li>
+                    <li><a href="/crawler/CampaignOverviewServlet?id=70&crawlId=268">Little Forest</a> <div class="triangle">&nbsp;</div></li> 
+                </ul> 
+            </div>
+        <div class="container_24">
+            <div id='dp' style="float: right;display: block;position: absolute;right: 0px;"></div>
+            <div class="grid_24">
+
+                <div class="sitelevel">
+                    <div class="header-1">
+                    <h1 class=""><i class="fa fa-file-text"></i>&nbsp;&nbsp;British Council Site Report</h1>
+                    </div>
+
+            <div class="search-section">
+            <div class="search-div">
+                <input id="tags" value="Search"  type="text" class="search-text" aria-controls="example" />                
+                 <input class="sb_search" id="searchBt" type="button" value="Search" />
+            </div>
+           </div>
+        <div class="first-section">
+                    <div class="snapshot">
+                        <img src="images/screenshot.png">
+                    </div>
+                    <div class="score-box">
+                    <div class="score">
+                        <div class="rank-box">
+                        <p class="rank-title"><i class="fa fa-bar-chart"></i>&nbsp;&nbsp;Rank</p>
+                        <div class="score-inner-box">
+                        <p style="color: green">B</p>
+                        </div>
+                        </div>
+                        <div class="result-box">                        
+                        <p class="result-title"><i class="fa fa-clipboard"></i>&nbsp;&nbsp;Result</p>
+                        <div class="percentage-inner-box">
+                            <p style="color: green">70.0</p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="gaugeinfo">
+                        <div class="gaugeinfo-inner-box">
+                            <div id="rate" style="display:none">70</div>
+                            <div id="gauge" style=" width:auto; height:auto"></div>
+                            <div class="key">
+                                <ul>
+                                    <div class="red"></div>
+                                    <li>Poor</li>
+                                    <div class="yellow"></div>
+                                    <li>Fair</li>
+                                    <div class="green"></div>
+                                    <li>Very Good</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div><!-- End of first section -->
+                    <p class="section-divider-p"><i class="fa fa-tachometer"></i>&nbsp;&nbsp;Dashboard</p>
+                    <div class="box">
+                        <h2 id="lfiscore" title=""><i class="fa fa-star-half-o"></i>&nbsp;&nbsp;LFI Score</h2>
+                        <div class="inner-box">
+                            <h3>
+                                <a href="/crawler/ViewScore?view=all&siteId=167&crawlId=268" style="color: green">70.0</a>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <h2 id="govenscore" title=""><i class="fa fa-male"></i>&nbsp;&nbsp;Governance Score</h2>
+                        <div class="inner-box">
+                            <h3>
+                                <a href="/crawler/ViewScore?view=3&siteId=167&crawlId=268" style="color: green">72.9</a>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <h2 id="contentscore" title=""><i class="fa fa-file-o"></i>&nbsp;&nbsp;Content Score</h2>
+                        <div class="inner-box">
+                            <h3>
+                                <a href="/crawler/ViewScore?view=4&siteId=167&crawlId=268" style="color: rgb(255, 102, 0)">67.5</a>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <h2 id="infrascore" title=""><i class="fa fa-server"></i>&nbsp;&nbsp;Infrastructure Score</h2>
+                        <div class="inner-box">
+                            <h3>
+                                <a href="/crawler/ViewScore?view=2&siteId=167&crawlId=268" style="color: green">82.7</a>
+                            </h3>
+                        </div>
+                    </div>
+                    
+                        <div class="box">
+                            <h2 id="searchscore" title=""><i class="fa fa-search"></i>&nbsp;&nbsp;Search Score</h2>
+                            <div class="inner-box">
+                                <h3>
+                                    <a href="/crawler/ViewScore?view=1&siteId=167&crawlId=268" style="color: red">50.1</a>
+                                </h3>
+                            </div>
+                        </div>
+                    
+                    
+                    <div class="tab-container1">
+                        <div class="linechart">
+                            <div id="Scores_" style="min-width: 1330px; height: 600px; margin: 0 auto; margin-bottom:30px;"></div>
+                        </div>
+                    </div>
+                     <p class="section-divider-p"><i class="fa fa-exclamation-triangle"></i>&nbsp;&nbsp;Issues to fix</p>
+                    <div class="box">
+                        <h2 id="th_client" title=""><i class="fa fa-male"></i>&nbsp;&nbsp;Client Errors</h2>
+                        <div class="inner-box">
+                            <h3 style="color: green">
+                                
+                                0
+                                
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <h2 id="th_server" title=""><i class="fa fa-database"></i>&nbsp;&nbsp;Server Errors</h2>
+                        <div class="inner-box">
+                            <h3 style="color: green">
+                                
+                                    0
+                                
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <h2 id="th_underscores" title=""><i class="fa fa-underline"></i>&nbsp;&nbsp;Underscores in URL</h2>
+                        <div class="inner-box">
+                            <h3 style="color: green">
+                                
+                                    <a href="/crawler/related-pages?sid=167&cid=268&type=underS"  style="color: orange;">
+                                    2
+                                    </a>
+                                
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <h2 id="th_title_missing" title=""><i class="fa fa-file"></i>&nbsp;&nbsp;Title Missing or Empty</h2>
+                        <div class="inner-box">
+                            <h3 style="color: green">
+                                
+                                    0 
+                                 
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <h2 id="th_duplicate_title" title=""><i class="fa fa-map"></i>&nbsp;&nbsp;Duplicate Page Title</h2>
+                        <div class="inner-box">
+                            <h3 style="color: green">
+                            
+                                <a href="/crawler/related-pages?sid=167&cid=268&type=titleD"  style="color: orange;">
+                                20
+                                </a>
+                             
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <h2 id="missing_description" title=""><i class="fa fa-th-list"></i>&nbsp;&nbsp;Missing Meta Description</h2>
+                        <div class="inner-box">
+                            <h3 style="color: green">
+                                
+                                    0
+                                        
+                            </h3></div>
+                    </div>
+                    <div class="box">
+                        <h2 id="title_too_short" title=""><i class="fa fa-sort-amount-asc"></i>&nbsp;&nbsp;Title Too Short</h2>
+                        <div class="inner-box"><h3 style="color: green">
+                            
+                                     <a href="/crawler/related-pages?sid=167&cid=268&type=titleTS"  style="color: orange;">
+                                     19
+                                     </a>
+                                   
+                            </h3></div>
+                    </div>
+                    <div class="box">
+                        <h2 id="title_too_long" title=""><i class="fa fa-sort-amount-desc"></i>&nbsp;&nbsp;Title Too Long</h2>
+                        <div class="inner-box"><h3 style="color: green">
+                            
+                                    0
+                                   
+                            </h3></div>
+                    </div>
+                    <div class="box">
+                        <h2 id="th_onpage_link" title=""><i class="fa fa-link"></i>&nbsp;&nbsp;Too Many on Page Links</h2>
+                        <div class="inner-box">
+                            <h3 style="color: green">
+                                
+                                    0
+                                
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <h2 id="dynamic_url" title=""><i class="fa fa-retweet"></i>&nbsp;&nbsp;Overly Dynamic URL</h2>
+                        <div class="inner-box"><h3 style="color: green">
+                               
+                                    0
+                                  
+                            </h3></div>
+                    </div>   
+                    <div class="box" style="display:display;">
+                        <h2 id="js_error" title=""><i class="fa fa-chain-broken"></i>&nbsp;&nbsp;Pages with Javascript Error</h2>
+                        <div class="inner-box"><h3 style="color: green">
+                               
+                                    0
+                                      
+                            </h3></div>
+                    </div>
+                    <div class="box">
+                        <h2 id="unclear_response" title=""><i class="fa fa-bell-slash-o"></i>&nbsp;&nbsp;Pages with Unclear Response</h2>
+                        <div class="inner-box"><h3 style="color: green">
+                            
+                                     0
+                                       
+                            </h3></div>
+                    </div>
+                    <div class="box">
+                        <h2 id="pdf-open-in-itself" title=""><i class="fa fa-file-text"></i>&nbsp;&nbsp;PDFs opened in the same tab</h2>
+                        <div class="inner-box"><h3 style="color: green">
+                            
+                                     <a href="/crawler/asset-reference-pages?sid=167&cid=268&ttype=pdf-in-self"  style="color: orange;">
+                                     41
+                                     </a>
+                                       
+                            </h3></div>
+                    </div>
+                    <div class="box">
+                        <h2 id="non-responsive" title=""><i class="fa fa-mobile"></i>&nbsp;&nbsp;Pages that are not responsive</h2>
+                        <div class="inner-box"><h3 style="color: green">
+                            
+                                     <a href="/crawler/related-pages?sid=167&cid=268&type=non-responsive"  style="color: orange;">
+                                     20
+                                     </a>
+                                       
+                            </h3></div>
+                    </div>
+                    
+                    
+                    
+                    <div class="tab-container1">
+                        <div class="linechart">
+                            <div>
+                                <form>
+                                    <select name="cat" class="drop-down issues-dd">
+                                        <option value="Client_Errors">Client Errors</option>
+                                        <option value="Server_Errors">Server Errors</option>
+                                        <option value="Javascript_Errors" style="display:display;">Javascript Errors</option>
+                                        <option value="Meta_Description_Missing">Meta Description Missing</option>
+                                        <option value="Title_Missing">Title Missing</option>
+                                        <option value="Title_Too_Short">Title Too Short</option>
+                                        <option value="Title_Too_Long">Title Too Long</option>
+                                        <option value="Duplicate_Page_Title">Duplicate Page Title</option>
+                                        <option value="Underscores_in_URL">Underscores in URL</option>
+                                        <option value="Too_Many_on_Page_Links">Too Many on Page Links</option>
+                                        <option value="Overly_Dynamic_URL">Overly Dynamic URL</option>
+                                    </select>
+                                </form>
+                            </div>
+                            <div id="Client_Errors" style="min-width: 1330px; height: 600px; margin: 0 auto; margin-bottom:100px;"></div>
+                            <div id="Server_Errors" style="min-width: 1330px; height: 600px; margin: 0 auto; margin-bottom:100px;" hidden=""></div>
+                            <div id="Javascript_Errors" style="min-width: 1330px; height: 600px; margin: 0 auto; margin-bottom:100px;" hidden=""></div>
+                            <div id="Meta_Description_Missing" style="min-width: 1330px; height: 600px; margin: 0 auto; margin-bottom:100px;" hidden=""></div>
+                            <div id="Title_Missing" style="min-width: 1330px; height: 600px; margin: 0 auto; margin-bottom:100px;" hidden=""></div>
+                            <div id="Title_Too_Short" style="min-width: 1330px; height: 600px; margin: 0 auto; margin-bottom:100px;" hidden=""></div>
+                            <div id="Title_Too_Long" style="min-width: 1330px; height: 600px; margin: 0 auto; margin-bottom:100px;" hidden=""></div>
+                            <div id="Duplicate_Page_Title" style="min-width: 1330px; height: 600px; margin: 0 auto; margin-bottom:100px;" hidden=""></div>
+                            <div id="Underscores_in_URL" style="min-width: 1330px; height: 600px; margin: 0 auto; margin-bottom:100px;" hidden=""></div>
+                            <div id="Too_Many_on_Page_Links" style="min-width: 1330px; height: 600px; margin: 0 auto; margin-bottom:100px;" hidden=""></div>
+                            <div id="Overly_Dynamic_URL" style="min-width: 1330px; height: 600px; margin: 0 auto; margin-bottom:100px;" hidden=""></div>
+                        </div>
+                    </div>
+                    <p class="section-divider-p"><i class="fa fa-file-text content-icon"></i>&nbsp;&nbsp;Content Information</p>
+                    <div class="content-info-table">
+                        <table cellspacing="0" cellpadding="0" border="0" id="example" class="display dataTable" aria-describedby="example_info">
+                            <thead>
+                                <tr role="row">
+                                    <th class="sorting" role="columnheader" tabindex="0" aria-controls="example" rowspan="1" colspan="1"  aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending"><i class="fa fa-desktop"></i>&nbsp;&nbsp;Screenshot</th>
+                                    <th class="sorting" role="columnheader" tabindex="0" aria-controls="example" rowspan="1" colspan="1"  aria-label="Browser: activate to sort column ascending"><i class="fa fa-link"></i>&nbsp;&nbsp;URL</th>
+                                    <th class="sorting" role="columnheader" tabindex="0" aria-controls="example" rowspan="1" colspan="1"  aria-label="Browser: activate to sort column ascending"><i class="fa fa-file-text"></i>&nbsp;&nbsp;Title</th>
+                                    <th class="sorting" role="columnheader" tabindex="0" aria-controls="example" rowspan="1" colspan="1"  aria-label="Browser: activate to sort column ascending"><i class="fa fa-list"></i>&nbsp;&nbsp;Status Code</th>
+                                    <th class="sorting" role="columnheader" tabindex="0" aria-controls="example" rowspan="1" colspan="1"  aria-label="Browser: activate to sort column ascending"><i class="fa fa-table"></i>&nbsp;&nbsp;Page Details</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tbody" role="alert" aria-live="polite" aria-relevant="all">
+                                
+                                                    <tr class="gradeA">
+                                                    <td class="center">
+                                                        <a href="/crawler/pagedetails?pageId=2352756&siteId=167&crawlId=268">
+                                                            <img src="images/home.png" style="width: auto; height: 80px; padding: 20px;" />
+                                                        </a>
+                                                    </td>
+                                                                                       
+                                                          <td class="left"><a href="https://www.britishcouncil.org/" target="_blank">https://www.britishcouncil.org/</a></td>                                                                       
+                                                        
+                                                          <td class="left" style="font-size:14px">British Council | United Kingdom</td>
+                                                    <td class="center" style="color:green">200</td>
+                                                    <td class="center">
+                                                        
+                                                    <a href="/crawler/pagedetails?pageId=2352756&siteId=167&crawlId=268">Page Details</a>
+                                                     
+                                                    </td>
+                                                    </tr>
+                                                    
+                                                    <tr class="gradeA">
+                                                    <td class="center">
+                                                        <a href="/crawler/pagedetails?pageId=2352764&siteId=167&crawlId=268">
+                                                            <img src="images/organisation.png" style="width: auto; height: 80px; padding: 20px;" />
+                                                        </a>
+                                                    </td>
+                                                                                       
+                                                          <td class="left"><a href="https://www.britishcouncil.org/organisation" target="_blank">https://www.britishcouncil.org/organisation</a></td>                                                                       
+                                                        
+                                                          <td class="left" style="font-size:14px">Our organisation | British Council</td>
+                                                    <td class="center" style="color:green">200</td>
+                                                    <td class="center">
+                                                        
+                                                    <a href="/crawler/pagedetails?pageId=2352764&siteId=167&crawlId=268">Page Details</a>
+                                                     
+                                                    </td>
+                                                    </tr>
+                                                    
+                                                    <tr class="gradeA">
+                                                    <td class="center">
+                                                        <a href="/crawler/pagedetails?pageId=2352765&siteId=167&crawlId=268">
+                                                            <img src="images/partner.png" style="width: auto; height: 80px; padding: 20px;" />
+                                                        </a>
+                                                    </td>
+                                                                                       
+                                                          <td class="left"><a href="https://www.britishcouncil.org/partner" target="_blank">https://www.britishcouncil.org/partner</a></td>                                                                       
+                                                        
+                                                          <td class="left" style="font-size:14px">Partner with us | British Council</td>
+                                                    <td class="center" style="color:green">200</td>
+                                                    <td class="center">
+                                                        
+                                                    <a href="/crawler/pagedetails?pageId=2352765&siteId=167&crawlId=268">Page Details</a>
+                                                     
+                                                    </td>
+                                                    </tr>
+                                                    
+                                                    <tr class="gradeA">
+                                                    <td class="center">
+                                                        <a href="/crawler/pagedetails?pageId=2352766&siteId=167&crawlId=268">
+                                                        <img src="images/arts.png" style="width: auto; height: 80px; padding: 20px;" />
+                                                        </a>
+                                                    </td>
+                                                                                       
+                                                          <td class="left"><a href="https://www.britishcouncil.org/arts" target="_blank">https://www.britishcouncil.org/arts</a></td>                                                                       
+                                                        
+                                                          <td class="left" style="font-size:14px">Our work in arts | British Council</td>
+                                                    <td class="center" style="color:green">200</td>
+                                                    <td class="center">
+                                                        
+                                                    <a href="/crawler/pagedetails?pageId=2352766&siteId=167&crawlId=268">Page Details</a>
+                                                     
+                                                    </td>
+                                                    </tr>
+                                                    
+                                                    <tr class="gradeA">
+                                                    <td class="center">
+                                                        <a href="/crawler/pagedetails?pageId=2352767&siteId=167&crawlId=268">
+                                                            <img src="images/work.png" style="width: auto; height: 80px; padding: 20px;" />
+                                                        </a>
+                                                    </td>
+                                                                                       
+                                                          <td class="left"><a href="https://www.britishcouncil.org/society" target="_blank">https://www.britishcouncil.org/society</a></td>                                                                       
+                                                        
+                                                          <td class="left" style="font-size:14px">Our work in society | British Council</td>
+                                                    <td class="center" style="color:green">200</td>
+                                                    <td class="center">
+                                                        
+                                                    <a href="/crawler/pagedetails?pageId=2352767&siteId=167&crawlId=268">Page Details</a>
+                                                     
+                                                    </td>
+                                                    </tr>
+                                                        
+                            </tbody>
+                        </table>
+                                <a href="/crawler/related-pages?sid=167&cid=268&type=allpages" class="view-pages-button">
+                                    View all your ( 39 ) pages
+                                </a>
+                           
+                    </div>
+                    
+                    <div class="box">
+                        <h2 id="th_pdf" title=""><i class="fa fa-file-pdf-o"></i>&nbsp;&nbsp;All PDFs</h2>
+                        <div class="inner-box">
+                            <h3>
+                                
+                                    <a href="/crawler/view-assets?sid=167&cid=268&type=pdf"  style="color: green;">
+                                    3
+                                    </a>
+                                
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <h2 id="th_images" title=""><i class="fa fa-file-image-o"></i>&nbsp;&nbsp;All Images</h2>
+                        <div class="inner-box">
+                            <h3>
+                                
+                                    <a href="/crawler/view-assets?sid=167&cid=268&type=img"  style="color: green;">
+                                    74
+                                    </a>
+                                    
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <h2 id="th_videos" title=""><i class="fa fa-file-video-o"></i>&nbsp;&nbsp;All Videos</h2>
+                        <div class="inner-box">
+                            <h3>
+                                
+                                    <a href="/crawler/view-assets?sid=167&cid=268&type=video"  style="color: green;">
+                                    1
+                                    </a>
+                                    
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <h2 id="all_js" title=""><i class="fa fa-code"></i>&nbsp;&nbsp;All Javascript</h2>
+                        <div class="inner-box"><h3>
+                        
+                            <a href="/crawler/view-assets?sid=167&cid=268&type=js" style="color: green;">7</a>
+                              
+                            </h3></div>
+                    </div>
+                    <div class="box">
+                        <h2 id="all_css" title=""><i class="fa fa-css3"></i>&nbsp;&nbsp;All CSS</h2>
+                        <div class="inner-box"><h3>
+                                
+                             <a href="/crawler/view-assets?sid=167&cid=268&type=css" style="color: green;">8</a>
+                            
+                            </h3></div>
+                    </div>
+                    
+                            <div class="box" style="display:display;">
+                        <h2 id="th_cookies" title=""><i class="fa fa-pie-chart"></i>&nbsp;&nbsp;Cookies</h2>
+                        <div class="inner-box">
+                            <h3>
+                                
+                                    <a href="/crawler/view-assets?sid=167&cid=268&type=cookie" style="color: green;">
+                                    4
+                                    </a>
+                                
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <h2 id="th_email" title=""><i class="fa fa-envelope"></i>&nbsp;&nbsp;Emails</h2>
+                        <div class="inner-box">
+                            <h3>
+                                
+                                    0
+                                
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <h2 id="th_word" title=""><i class="fa fa-file-word-o"></i>&nbsp;&nbsp;All Word Documents</h2>
+                        <div class="inner-box">
+                            <h3>
+                                
+                                    0
+                                
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <h2 id="th_excel" title=""><i class="fa fa-file-excel-o"></i>&nbsp;&nbsp;All Excel Files</h2>
+                        <div class="inner-box">
+                            <h3>
+                                
+                                    0
+                                
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <h2 id="th_ppt" title=""><i class="fa fa-file-powerpoint-o"></i>&nbsp;&nbsp;All PowerPoints</h2>
+                        <div class="inner-box">
+                            <h3>
+                                
+                                    0
+                                
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <h2 id="th_exe" title=""><i class="fa fa-terminal"></i>&nbsp;&nbsp;All Executable Files</h2>
+                        <div class="inner-box">
+                            <h3>
+                                
+                                    0
+                                
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <h2 id="th_swf" title=""><i class="fa fa-play-circle-o"></i>&nbsp;&nbsp;All Flash Files</h2>
+                        <div class="inner-box">
+                            <h3>
+                                
+                                    0
+                                
+                            </h3>
+                        </div>
+                    </div>
+                            
+                    <div class="box">
+                        <h2 id="th_new_page" title=""><i class="fa fa-plus-square-o"></i>&nbsp;&nbsp;New Pages</h2>
+                        <div class="inner-box">
+                            <h3>
+                                
+                                    <a href="/crawler/related-pages?sid=167&cid=268&type=newpages"  style="color: green;">10</a>
+                                 
+                            </h3>
+                        </div>
+                    </div>      
+                    <div class="box">
+                        <h2 id="redirect_pages" title=""><i class="fa fa-repeat"></i>&nbsp;&nbsp;Redirect Pages</h2>
+                        <div class="inner-box">
+                            <h3 style="color: green">
+                                
+                                    <a href="/crawler/related-pages?sid=167&cid=268&type=redirection"  style="color: orange;">
+                                    19
+                                    </a>
+                                    
+                            </h3>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <h2 id="th_canonical_link" title=""><i class="fa fa-external-link-square"></i>&nbsp;&nbsp;Canonical Links</h2>
+                        <div class="inner-box"><h3><a href="/crawler/PageCanonicalServlet?siteId=167&crawlId=268" style="color: green;" >0</a></h3></div>
+                    </div>
+
+                    <div class="box">
+                        <h2 id="has_robots" title=""><i class="fa fa-android"></i>&nbsp;&nbsp;Has robots.txt</h2>
+                        <div class="inner-box">
+                            
+                                        <h3><a href="http://tesco.hu/robots.txt" style="color: green;" target="_blank">Yes</a></h3>
+                                        
+                        </div>
+                    </div>
+                    <div class="box">
+                        <h2 id="has_sitemap" title=""><i class="fa fa-sitemap"></i>&nbsp;&nbsp;Has sitemap.xml</h2>
+                        <div class="inner-box">
+                            
+                                        <h3><a href="http://tesco.hu/sitemap.xml" style="color: green;" target="_blank">Yes</a></h3>
+                                        
+                        </div>
+                    </div>
+                    <div class="box">
+                        <h2 id="meta_refresh" title=""><i class="fa fa-refresh"></i>&nbsp;&nbsp;Meta Refresh</h2>
+                        <div class="inner-box"><h3>
+                               
+                                    0
+                                 
+                            </h3></div>
+                    </div>
+                    <div class="box">
+                        <h2 id="block_all_agents" title=""><i class="fa fa-ban"></i>&nbsp;&nbsp;Blocking all user agents</h2>
+                        <div class="inner-box"><h3>
+                               
+                                    No
+                                  
+                            </h3></div>
+                    </div>
+                    
+                    <div class="box">
+                        <h2 id="view_saved_searches" title=""><i class="fa fa-floppy-o"></i>&nbsp;&nbsp;View Saved Searches</h2>
+                        <div class="inner-box"><h3>
+                           
+                            No Saved search
+                            
+                            </h3></div>
+                    </div>
+                    
+                     <div class="box">
+                         <h2 id="form_data" title=""><i class="fa fa-table"></i>&nbsp;&nbsp;Form Data</h2>
+                        <div class="inner-box"><h3>
+                           
+                            No Form Data Added
+                            
+                            </h3></div>
+                    </div>
+                    <!--<div class="recommendation">Report</div> -->
+                    <div class="tab-container1">
+                    <div class="linechart">
+                        <div>
+                            <form>
+                                <select name="cat" class="drop-down">
+                                    <option value="Total_Urls">Total URLs</option>
+                                    <option value="Redirect_Pages">Redirect Pages</option>
+                                    <option value="Canonical_Links">Canonical Links</option>
+                                    <option value="Total_PDFs">Total PDFs</option>
+                                    <option value="Total_Images">Total Images</option>
+                                    <option value="Total_Videos">Total Videos</option>
+                                    <option value="Total_Javascripts">Total Javascripts</option>
+                                    <option value="Total_CSS">Total CSS</option>
+                                    <option value="Total_Cookies" style="display:display;">Total Cookies</option>
+                                    <option value="Total_Emails">Total Emails</option>
+                                    <option value="Word_Documents">Word Documents</option>
+                                    <option value="Excel_Files">Excel Files</option>
+                                    <option value="Powerpoints">Powerpoints</option>
+                                    <option value="Executable_Files">Executable Files</option>
+                                    <option value="Flash_Files">Flash Files</option>
+                                    <option value="New_Pages">New Pages</option>
+                                    <option value="Meta_Refresh">Meta Refresh</option>
+                                </select>
+                            </form>
+                        </div>
+                        <div id="Total_Urls" style="min-width: 1330px; height: 600px; margin: 0 auto;    margin-bottom: 100px;" ></div>
+                        <div id="Redirect_Pages" style="min-width: 1330px; height: 600px; margin: 0 auto;     margin-bottom: 100px;" hidden=""></div>
+                        <div id="Canonical_Links" style="min-width: 1330px; height: 600px; margin: 0 auto;    margin-bottom: 100px;" hidden=""></div>
+                        <div id="Total_PDFs" style="min-width: 1330px; height: 600px; margin: 0 auto;    margin-bottom: 100px;" hidden=""></div>
+                        <div id="Total_Images" style="min-width: 1330px; height: 600px; margin: 0 auto;    margin-bottom: 100px;" hidden=""></div>
+                        <div id="Total_Videos" style="min-width: 1330px; height: 600px; margin: 0 auto;    margin-bottom: 100px;" hidden=""></div>
+                        <div id="Total_Javascripts" style="min-width: 1330px; height: 600px; margin: 0 auto;    margin-bottom: 100px;" hidden=""></div>
+                        <div id="Total_CSS" style="min-width: 1330px; height: 600px; margin: 0 auto; margin-bottom:30px;" hidden=""></div>
+                        <div id="Total_Cookies" style="min-width: 1330px; height: 600px; margin: 0 auto;     margin-bottom: 100px;;" hidden=""></div>
+                        <div id="Total_Emails" style="min-width: 1330px; height: 600px; margin: 0 auto;     margin-bottom: 100px;" hidden=""></div>
+                        <div id="Word_Documents" style="min-width: 1330px; height: 600px; margin: 0 auto;    margin-bottom: 100px;" hidden=""></div>
+                        <div id="Excel_Files" style="min-width: 1330px; height: 600px; margin: 0 auto;    margin-bottom: 100px;" hidden=""></div>
+                        <div id="Powerpoints" style="min-width: 1330px; height: 600px; margin: 0 auto;    margin-bottom: 100px;" hidden=""></div>
+                        <div id="Executable_Files" style="min-width: 1330px; height: 600px; margin: 0 auto;    margin-bottom: 100px;" hidden=""></div>
+                        <div id="Flash_Files" style="min-width: 1330px; height: 600px; margin: 0 auto;    margin-bottom: 100px;" hidden=""></div>
+                        <div id="New_Pages" style="min-width: 1330px; height: 600px; margin: 0 auto;    margin-bottom: 100px;" hidden=""></div>
+                        <div id="Meta_Refresh" style="min-width: 1330px; height: 600px; margin: 0 auto;    margin-bottom: 100px;" hidden=""></div>
+                    </div>
+                </div>
+
+                <p class="section-divider-p"><i class="fa fa-cogs"></i>&nbsp;&nbsp;Useful Tools</p>
+               <div class="ut">     
+                <div class="ut-box search-engine">
+                    <img src="images/search-engine.png" alt="Search Engine">
+                    <h3 class="ut-header">Search Engine</h3>
+                    <p class="ut-subheader">Position Tracking</p>
+                    <p class="ut-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pharetra nisi justo, sit amet consectetur urna scelerisque vitae. Suspendisse cursus consequat blandit.</p>
+                    <a class="ut-btn" href="#">Launch Search Engine</a>
+                </div>
+                <div class="ut-box uptime">
+                    <img src="images/uptime.png" alt="Uptime">
+                    <h3 class="ut-header">Uptime</h3>   
+                    <p class="ut-subheader">Monitor</p>
+                    <p class="ut-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pharetra nisi justo, sit amet consectetur urna scelerisque vitae. Suspendisse cursus consequat blandit.</p> 
+                    <a class="ut-btn" href="#">Launch Uptime</a>
+                </div>
+                <div class="ut-box outlinks">
+                    <img src="images/link.png" alt="Outlinks">
+                    <h3 class="ut-header">Outlinks</h3>     
+                    <p class="ut-subheader">Power Search</p>
+                    <p class="ut-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pharetra nisi justo, sit amet consectetur urna scelerisque vitae. Suspendisse cursus consequat blandit.</p> 
+                    <a class="ut-btn" href="#">Launch Outlinks</a>
+                </div>
+                </div>
+
+                        
+                
+                </div>
+                
+            </div>
+        </div>
+        
+
+
+        <div class="footer col-md-12 col-xs-12">
+            <p>
+                Powered by <a href="http://www.littleforest.co.uk/" style="color: #65892a; text-decoration: none; font-weight: bold;">Little Forest</a> a tool that encourages continuous improvement towards web success.
+            </p>
+        </div>
+    </body>
+</html>
+
+    </body>
+    <script src="js/highcharts.js"></script>
+    <script src="js/highcharts-more.js"></script>
+    <script src="js/modules/exporting.js"></script>
+    <script type="text/javascript">
+            $(document).ready(function() {
+                $("#datapoints").val("visits");
+                $('.graph').hide();
+                $('#visits').show();
+                /*------tooltip----------*/
+                $( document ).tooltip();
+                $("#th_client").tooltip({content:"<p>These are a type of Broken Link on your website. </p><p>This is usually caused by a mis-typed URL in the source code of a webpage.</p><p>Sometimes referred to using a technical term such as a “404” error response page. </p>"});
+                $("#th_server").tooltip({content:"<p>These are another type of Broken Link on your website.</p><p>They are usually caused by some technical issue like a part of an application having an error.</p><p>Sometimes referred to using a technical term such as a “500” error response page.</p>"});
+                $("#th_underscores").tooltip({content:"<p>If a URL has underscores in it this is not seen as a good thing by Search Engines.</p><p>Hyphens are the recommended way to separate words in a URL filename.</p>"});
+                $("#th_title_missing").tooltip({content:"<p>This is when a webpage does not have a “Title” in its document. Search engines use Titles to show to people when they list search results.</p><p>A compelling title encourages people to visit your webpage so it is recommended to review all your pages to ensure they contain the most relevant and well worded title possible.</p>"});
+                $("#th_duplicate_title").tooltip({content:"<p>This is when more than one web page on a website is found with the same Title.</p><p>Search engines like pages that are “unique” as they are seen as more compelling for readers.</p>"});
+                $("#th_onpage_link").tooltip({content:"<p>Search engines recommend less than 100 links to be on a page. </p><p>The logic behind this is that fewer more relevant links are better rather than a page that links to lots of other subjects.</p>"});
+                $("#th_total_page").tooltip({content:"<p>This is the total number of pages that our crawler found on your website.</p><p>Please note that pages that are not linked to by other pages cannot be found by an indexer.</p>"});
+                $("#th_new_page").tooltip({content:"<p>This is the number of “New” pages since the index was last run.</p>"});
+                $("#th_edited_page").tooltip({content:"<p>This is the number of pages that have changed since the index was last run.</p>"});
+                $("#th_canonical_link").tooltip({content:"<p>These are hidden links in a webpage that an author can use to help prevent duplicate content.</p><p>Duplicate content issues occur when the same content is accessible from multiple URLs.</p><p>These links show Search Engines the “preferred” version of a webpage.</p>"});
+                $("#th_pdf").tooltip({content:"<p>This is the number of PDF documents found on your website.</p><p>The details behind this also show you all pages that link to a PDF on your website.</p><p>This is useful when needing to update or delete content and understand what impact this will have on the rest of your pages.</p>"});
+                $("#th_videos").tooltip({content:"<p>This is the number of videos found on your website.</p>"});
+                $("#th_images").tooltip({content:"<p>This is the number of images found on your website.</p>"});
+                $("#all_js").tooltip({content:"<p>This is the number of JavaScript files found on your website.</p>"});
+                $("#all_css").tooltip({content:"<p>This is the number of CSS files found on your website.</p>"});
+                $("#redirect_pages").tooltip({content:"<p>These are pages that actually point at other pages when visited.</p><p>Depending on the manner in which the Redirect is created technically, they may be unhelpful for Search Engine optimisation.</p>"});
+                $("#missing_description").tooltip({content:"<p>This is when a webpage does not have a “Description” for its content.</p><p>Meta description is very important in gaining click through rate since it is often displayed on search engine result pages (SERPs) by search engines and provides more information for the searchers.</p><p>To conclude keywords in the description attribute is a good way to gain high rank.</p>"});
+                $("#title_too_short").tooltip({content:"<p>This is the number of pages on your site that have titles which are too short.</p><p>The title of the web page is recommended to be between around 3 and 9 words in alphabetic languages and 5 and 20 words in non alphabetic languages such as Chinese, Japanese.</p>"});
+                $("#title_too_long").tooltip({content:"<p>This is the number of pages on your site that have titles which are too long.</p><p>The title of the web page is recommended to be between around 3 and 9 words in alphabetic languages and 5 and 20 words in non alphabetic languages such as Chinese, Japanese.</p>"});
+                $("#dynamic_url").tooltip({content:"<p>The dynamic url is a URL which contains '?' or '&' in its content.</p><p>Search engine such as Google prefer simpler URL patterns which do not include these characters.</p>"});
+                $("#specify_img_dimension").tooltip({content:"<p>This is the width and the height specified in the image tags of the page.</p><p>Specifying image dimensions will help your webpages load faster.</p><p>The details behind this also show which page these images which have no dimension specified belong to.</p><p>This is useful when needing to find which pages contain no images dimensions.</p>"});
+                $("#js_error").tooltip({content:"<p>This details any JavaScript errors that have happened when your webpages are loading.</p><p>These errors are important to fix as they often cause functional problems and create a poor Customer experience on your website.</p>"});
+                $("#unclear_response").tooltip({content:"<p>These are the urls we found the status code are 1005.</p>"});
+                $("#has_robots").tooltip({content:"<p>This is to show if your website has a robots.txt file.</p><p>The robots.txt file is to give instructions about your site to web crawlers such as Google and lets them know which folders they cannot enter.</p>"});
+                $("#has_sitemap").tooltip({content:"<p>This is to show if your website has a sitemap.xml file.</p><p>This file is a list of the main pages on your website for the Search engines to visit.</p><p>This file is a best practice to have and is recommended by Google.</p>"});
+                $("#meta_refresh").tooltip({content:"<p>Normally, it is not a good practice to have meta refresh in your page since unexpected refresh may disorient users.</p>"});
+                $("#block_all_agents").tooltip({content:"<p>This is to show if your robots.txt file blocks all user agents.</p><p>If a search engine is blocked then users cannot find your site using them.</p>"});
+                $("#view_saved_searches").tooltip({content:"<p>These are the content search histories you saved in the past.</p><p>The details behind this also show the search keywords or terms, number of results and the date for each search you saved.</p><p>The saved searches are normally the frequent searches you do. It is easier for you to re-do or view them again.</p>"});
+                $("#form_data").tooltip({content:"<p>This feature can record the whole process of how your user interacts with your web forms by creating a series screenshots.</p><p>The system records the process in different browsers and different devices.</p><p>Please contact Little Forest <b>support@littleforest.co.uk</b> to enable this feature.</p>"});
+                $("#th_cookies").tooltip({content:"<p>This is the number of Unique Cookies found on your website.</p>"});
+                $("#th_word").tooltip({content:"<p>This is the number of Word documents found on your website.</p>"});
+                $("#th_excel").tooltip({content:"<p>This is the number of Excel documents found on your website.</p>"});
+                $("#th_ppt").tooltip({content:"<p>This is the number of PowerPoint documents found on your website.</p>"});
+                $("#th_exe").tooltip({content:"<p>This is the number of Executable files found on your website.</p>"});
+                $("#th_swf").tooltip({content:"<p>This is the number of Flash files found on your website.</p>"});
+                $("#pdf-open-in-itself").tooltip({content:"<p>These are the PDFs that are not opened in a new tab.</p>"});
+                $("#non-responsive").tooltip({content:"<p>These are the pages that are not responsive.</p>"});
+                //data table
+                $('#example').dataTable({
+                    "sScrollY": "100%",
+                    //"sDom": "Rlfrtip",
+                    "bFilter": false,
+                    "bInfo": false,
+                    "sScrollX": "100%",
+                    "sScrollXInner": "100%",
+                    "bScrollCollapse": true,
+                    "iDisplayLength": -1,
+                    //"bJQueryUI": true,
+                    "bPaginate": false,
+                    "aLengthMenu": [[5, 10, 100, -1], [5, 10, 100, "All"]],
+                });
+            });
+        </script>
+        <script>
+            var gauge = function(container, configuration) {
+                var that = {};
+                var config = {
+                    size: 200,
+                    clipWidth: 200,
+                    clipHeight: 110,
+                    ringInset: 20,
+                    ringWidth: 40,
+                    pointerWidth: 10,
+                    pointerTailLength: 5,
+                    pointerHeadLengthPercent: 0.9,
+                    minValue: 0,
+                    maxValue: 100,
+                    minAngle: -90,
+                    maxAngle: 90,
+                    transitionMs: 750,
+                    majorTicks: 10,
+                    labelFormat: d3.format(',g'),
+                    labelInset: 10,
+                    arcColorFn: d3.interpolateHsl(d3.rgb(255, 5, 5), d3.rgb(10, 85, 80))
+                };
+                var range = undefined;
+                var r = undefined;
+                var pointerHeadLength = undefined;
+                var value = 0;
+
+                var svg = undefined;
+                var arc = undefined;
+                var scale = undefined;
+                var ticks = undefined;
+                var tickData = undefined;
+                var pointer = undefined;
+
+                var donut = d3.layout.pie();
+
+                function deg2rad(deg) {
+                    return deg * Math.PI / 180;
+                }
+
+                function newAngle(d) {
+                    var ratio = scale(d);
+                    var newAngle = config.minAngle + (ratio * range);
+                    return newAngle;
+                }
+
+                function configure(configuration) {
+                    var prop = undefined;
+                    for (prop in configuration) {
+                        config[prop] = configuration[prop];
+                    }
+
+                    range = config.maxAngle - config.minAngle;
+                    r = config.size / 2;
+                    pointerHeadLength = Math.round(r * config.pointerHeadLengthPercent);
+
+                    // a linear scale that maps domain values to a percent from 0..1
+                    scale = d3.scale.linear()
+                            .range([0, 1])
+                            .domain([config.minValue, config.maxValue]);
+
+                    ticks = scale.ticks(config.majorTicks);
+                    tickData = d3.range(config.majorTicks).map(function() {
+                        return 1 / config.majorTicks;
+                    });
+
+                    arc = d3.svg.arc()
+                            .innerRadius(r - config.ringWidth - config.ringInset)
+                            .outerRadius(r - config.ringInset)
+                            .startAngle(function(d, i) {
+                        var ratio = d * i;
+                        return deg2rad(config.minAngle + (ratio * range));
+                    })
+                            .endAngle(function(d, i) {
+                        var ratio = d * (i + 1);
+                        return deg2rad(config.minAngle + (ratio * range));
+                    });
+                }
+                that.configure = configure;
+
+                function centerTranslation() {
+                    return 'translate(' + r + ',' + r + ')';
+                }
+
+                function isRendered() {
+                    return (svg !== undefined);
+                }
+                that.isRendered = isRendered;
+
+                function render(newValue) {
+                    svg = d3.select(container)
+                            .append('svg:svg')
+                            .attr('class', 'gauge')
+                            .attr('width', config.clipWidth)
+                            .attr('height', config.clipHeight);
+
+                    var centerTx = centerTranslation();
+
+                    var arcs = svg.append('g')
+                            .attr('class', 'arc')
+                            .attr('transform', centerTx);
+
+                    arcs.selectAll('path')
+                            .data(tickData)
+                            .enter().append('path')
+                            .attr('fill', function(d, i) {
+                                if(i<6){
+                                        return '#ff0505';
+                                }else if(i<7){
+                                        return '#c6c207';
+                                }else{
+                                        return '#108b0b';
+                                }
+                        //return config.arcColorFn(d * i);
+                    })
+                            .attr('d', arc);
+
+                    var lg = svg.append('g')
+                            .attr('class', 'label')
+                            .attr('transform', centerTx);
+                    lg.selectAll('text')
+                            .data(ticks)
+                            .enter().append('text')
+                            .attr('transform', function(d) {
+                        var ratio = scale(d);
+                        var newAngle = config.minAngle + (ratio * range);
+                        return 'rotate(' + newAngle + ') translate(0,' + (config.labelInset - r) + ')';
+                    })
+                            .text(config.labelFormat);
+
+                    var lineData = [[config.pointerWidth / 2, 0],
+                        [0, -pointerHeadLength],
+                        [-(config.pointerWidth / 2), 0],
+                        [0, config.pointerTailLength],
+                        [config.pointerWidth / 2, 0]];
+                    var pointerLine = d3.svg.line().interpolate('monotone');
+                    var pg = svg.append('g').data([lineData])
+                            .attr('class', 'pointer')
+                            .attr('transform', centerTx);
+
+                    pointer = pg.append('path')
+                            .attr('d', pointerLine/*function(d) { return pointerLine(d) +'Z';}*/)
+                            .attr('transform', 'rotate(' + config.minAngle + ')');
+
+                    update(newValue === undefined ? 0 : newValue);
+                }
+                that.render = render;
+
+                function update(newValue, newConfiguration) {
+                    if (newConfiguration !== undefined) {
+                        configure(newConfiguration);
+                    }
+                    var ratio = scale(newValue);
+                    var newAngle = config.minAngle + (ratio * range);
+                    pointer.transition()
+                            .duration(config.transitionMs)
+                            .ease('elastic')
+                            .attr('transform', 'rotate(' + newAngle + ')');
+                }
+                that.update = update;
+
+                configure(configuration);
+
+                return that;
+            };
+        </script>
+        <script>
+            function onDocumentReady() {
+                var powerGauge = gauge('#gauge', {
+                    size: 450,
+                    clipWidth: 430,
+                    clipHeight: 240,
+                    ringWidth: 60,
+                    maxValue: 100,
+                    transitionMs: 4000,
+                });
+               
+                powerGauge.render(70.0);
+            }
+
+            if (!window.isLoaded) {
+                window.addEventListener("load", function() {
+                    onDocumentReady();
+                }, false);
+            } else {
+                onDocumentReady();
+            }
+        </script>
+        <script type="text/javascript">
+            $(document).ready(function() {         
+                $("#siteswitcher").val("167");
+                
+                //*************content search start*******************//
+                $( "#tags" ).keypress(function(event){
+                    var keycode = (event.keyCode ? event.keyCode : event.which);
+                    
+                    if(keycode === 13){
+                        var tagsValue = $('#tags').val(); // get search text
+                        tagsValue = encodeURIComponent(tagsValue);
+                        var searchOption = $('#searchoption').val();
+                        var selectOption = 0;
+                        if(searchOption === "contain"){
+                            selectOption = 1;
+                        }
+                        tagsValue = tagsValue.trim();
+                        if(tagsValue){
+                            postRequest("/crawler/ContentSearch",[["siteId",'167'],["crawlId",'268'],["contains",selectOption],["value",tagsValue]]);
+                        }
+                    }
+                });
+                $("#searchBt").click(function(){
+                    var tagsValue = $('#tags').val(); // get search text
+                    tagsValue = encodeURIComponent(tagsValue); //encode the text
+                    var searchOption = $('#searchoption').val();
+                    var selectOption = 0;
+                    if(searchOption === "contain"){
+                        selectOption = 1;
+                    }
+                    tagsValue = tagsValue.trim();
+                    if(tagsValue){
+                        postRequest("/crawler/ContentSearch",[["siteId",'167'],["crawlId",'268'],["contains",selectOption],["value",tagsValue]]);
+                    }
+                });
+                $( "#tags" ).focus(function() {
+                    if (!$(this).data('Search All Content')) {
+                            $(this).data('Search All Content', $(this).val());
+                    }
+                    if ($(this).val() === $(this).data('Search All Content')) {
+                            $(this).val('');
+                    }
+                }).blur(function(){
+                    if ($(this).val() === '') {
+                        $(this).val($(this).data('Search All Content'));
+                    }
+                });
+                //*************content search finish*******************//
+            });
+            //http post
+            function postRequest(url,arr){
+                var formObj = document.createElement("form");  
+                formObj.action=url;
+                formObj.method = "post";
+                
+                if(arr !== null){
+                    for(var i=0;i<arr.length;i++){
+                        Input = document.createElement("input");
+                        Input.name = arr[i][0]; 
+                        Input.type = "hidden";
+                        Input.value = arr[i][1];
+                        formObj.appendChild(Input);
+                    }
+                }
+                document.body.appendChild(formObj);
+                formObj.submit();
+                document.body.removeChild(formObj);
+            }
+            $(document).on("change",".drop-down",function(){
+                var value = $(this).val();
+                var next = $(this).parent().parent();
+                for(var i=0;i<$(this).children().length;i++){
+                    next = next.next();
+                    next.hide();
+                    if(next.attr('id') == value){
+                        next.show();
+                    }
+                }
+            });  
+            $(document).on("change","#siteswitcher",function(){
+                var value = $(this).val();
+                location.href = location.href.split("?")[0] + "?id="+value+"&crawlId=268";
+            });  
+        </script>
+        <script type="text/javascript">
+            $(function () {
+                $('#visits').highcharts({
+                    title: {
+                        text: null,
+                    },
+                    yAxis:{
+                      min: 0  
+                    },
+                    xAxis: {
+                        categories: [
+                            
+                        ]
+                    },
+                    legend: {
+                        itemStyle: {
+                            fontSize: '16px'
+                        }
+                    },
+                    series: [{
+                        name: 'Number of visits',
+                        data: []
+                    }]
+                });
+                
+                $('#goals').highcharts({
+                    title: {
+                        text: null,
+                    },
+                    yAxis:{
+                      min: 0  
+                    },
+                    xAxis: {
+                        categories: [
+                            
+                        ]
+                    },
+                    legend: {
+                        itemStyle: {
+                            fontSize: '16px'
+                        }
+                    },
+                    series: [{
+                        name: 'Goals achieved',
+                        data: []
+                    }]
+                });
+                
+                $('#visitors').highcharts({
+                    title: {
+                        text: null,
+                    },
+                    yAxis:{
+                      title: {
+                        text: 'Percentages'
+                        },
+                        labels: {
+                            formatter: function () {
+                                return this.value+'%';
+                            }
+                        },
+                      min: 0,
+                      max:100
+                    },
+                    tooltip: {
+                        valueSuffix: '%'
+                    },
+                    legend: {
+                        itemStyle: {
+                            fontSize: '16px'
+                        }
+                    },
+                    xAxis: {
+                        categories: [
+                            
+                        ]
+                    },
+                    series: [{
+                        name: 'Returning visitors %',
+                        data: []
+                    }]
+                });
+                
+                $('#bounce').highcharts({
+                    title: {
+                        text: null,
+                    },
+                    yAxis:{
+                      title: {
+                        text: 'Percentages'
+                        },
+                        labels: {
+                            formatter: function () {
+                                return this.value+'%';
+                            }
+                        },
+                      min: 0,
+                      max:100
+                    },
+                    tooltip: {
+                        valueSuffix: '%'
+                    },
+                    legend: {
+                        itemStyle: {
+                            fontSize: '16px'
+                        }
+                    },
+                    xAxis: {
+                        categories: [
+                            
+                        ]
+                    },
+                    series: [{
+                        name: 'Bounce rate %',
+                        data: []
+                    }]
+                });
+                
+                $('#time').highcharts({
+                    title: {
+                        text: null,
+                    },
+                    yAxis:{
+                      title: {
+                        text: 'Seconds'
+                        },
+                        labels: {
+                            formatter: function () {
+                                return this.value+' s';
+                            }
+                        },
+                      min: 0
+                    },
+                    tooltip: {
+                        valueSuffix: ' s'
+                    },
+                    legend: {
+                        itemStyle: {
+                            fontSize: '16px'
+                        }
+                    },
+                    xAxis: {
+                        categories: [
+                            
+                        ]
+                    },
+                    series: [{
+                        name: 'Average session duration',
+                        data: []
+                    }]
+                });
+                
+                $('#pages').highcharts({
+                    title: {
+                        text: null,
+                    },
+                    yAxis:{
+                      min: 0
+                    },
+                    legend: {
+                        itemStyle: {
+                            fontSize: '16px'
+                        }
+                    },
+                    xAxis: {
+                        categories: [
+                            
+                        ]
+                    },
+                    series: [{
+                        name: 'Number pages per session',
+                        data: []
+                    }]
+                });
+                $('#channels').highcharts({
+                    title: {
+                        text: null,
+                    },
+                    yAxis:{
+                      min: 0
+                    },
+                    legend: {
+                        itemStyle: {
+                            fontSize: '16px'
+                        }
+                    },
+                    xAxis: {
+                        categories: [
+                            
+                        ]
+                    },
+                    series: [
+                    ]
+                }); 
+                $('#devices').highcharts({
+                    title: {
+                        text: null,
+                    },
+                    yAxis:{
+                      min: 0
+                    },
+                    legend: {
+                        itemStyle: {
+                            fontSize: '16px'
+                        }
+                    },
+                    
+                    xAxis: {
+                        categories: [
+                            
+                        ]
+                    },
+                    
+                });
+                $('#campaigns').highcharts({
+                    title: {
+                        text: null,
+                    },
+                    yAxis:{
+                      min: 0
+                    },
+                    legend: {
+                        itemStyle: {
+                            fontSize: '16px'
+                        }
+                    },
+                    
+                    xAxis: {
+                        categories: [
+                            
+                        ]
+                    },
+                    series: [{
+                        name: 'Sessions (full site)',
+                        data: []
+                    },{
+                        name: 'Sessions from all campaigns',
+                        data: []
+                    }]
+                });
+            });
+        </script>
+</html>
+

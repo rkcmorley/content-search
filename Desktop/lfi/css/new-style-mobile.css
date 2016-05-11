@@ -1,0 +1,493 @@
+/***********************************************
+Screen 1200px+
+***********************************************/
+#campaignList {
+    width: 95%;
+}	
+
+.container_24{
+	min-width: auto;
+}
+
+
+
+/***********************************************
+Screen Smaller than 1199px
+***********************************************/
+@media only screen and (min-width:960px) and (max-width: 1199px) {
+.header{
+    padding: 30px;
+}
+
+#campaignList {
+    width: 95%;
+	margin-left: 30px;
+}	
+
+.container_24{
+	min-width: auto;
+}
+
+.cl-full{
+	width:95%;
+}
+
+.navigation{
+    padding: 0 0 0 30px;
+}
+
+.campaignList-left-section p, 
+.pageViews p, 
+.viewCampaign a, 
+.field, 
+#createCampaignButton a,
+.header ul.log-in li, 
+.header ul.log-in li a,
+.footer a{
+	font-size: 16px;
+}
+
+#pageTitle{
+	font-size: 40px;
+}
+
+.field{
+	width: 40px;
+    height: 40px;
+}
+
+.viewCampaign{
+	height: 55px;
+}
+
+.viewCampaign a{
+	line-height: 55px;
+}
+
+.campaignListInfo{
+	width: 550px;
+}
+
+.governance{
+	width: 150px;
+}
+
+.data-benchmarking {
+    width: 200px;
+}
+
+#campaignList #createCampaignButton {
+    width: 150px;
+    margin-right: 1200px;    
+}
+
+.header ul.log-in{
+	margin: 0px 0px 0px 405px;    
+	float: none;
+    position: relative;
+    top: -30px;	
+}
+
+}
+
+/***********************************************
+Tablet (Smaller than 959px)
+***********************************************/
+@media only screen and (min-width:768px) and (max-width: 959px) {
+.header{
+    padding: 30px;
+}
+
+.header img.logo{
+	width:10%;
+}
+
+#campaignList {
+    width: 100%;
+}	
+
+.cl-full{
+	width:75% !important;
+	margin:0 27px !important;	
+}
+
+.navigation{
+    padding: 0 0 0 30px;
+}
+
+.campaignList-left-section p, 
+.pageViews p, 
+.viewCampaign a, 
+.field, 
+#createCampaignButton a, 
+.header ul.log-in li, 
+.header ul.log-in li a, 
+.navigation ul li a,
+.footer a{
+	font-size: 14px;
+}
+
+#pageTitle{
+	font-size: 33px;
+	margin:37px 0;
+}
+
+.field{
+	width: 35px;
+    height: 35px;
+    line-height: 35px;
+}
+
+.viewCampaign{
+	height: 50px;
+	margin-left: 13px;
+}
+
+.viewCampaign a {
+    line-height: 50px;
+}
+
+#createCampaignButton{
+	width:100%;
+}
+
+.footer{
+	text-align: left;
+	padding: 0 0 0 30px;
+	height: 65px;
+}
+
+.footer p {
+    font-size: 14px;
+    padding-top: 20px;
+}
+
+.grid_24{
+	float: left;
+}
+
+.campaignListInfo{
+	width: 404px;
+}
+
+.data-benchmarking{
+	width: 175px;
+}
+
+.governance{
+	width: 115px;
+}
+
+#campaignList #createCampaignButton {
+    width: 150px;
+    margin-right: 1200px;    
+}
+
+.header ul.log-in{
+	margin: 0px 0px 0px 270px;    
+	float: none;
+    position: relative;
+    top: -30px;	
+}
+
+}
+
+/***********************************************
+Mobile (portrait 300px) iPhone 6 Plus
+***********************************************/
+@media only screen and (max-width:767px) {
+.header{
+    padding: 30px;
+}
+
+.header img.logo{
+	width:8%;
+}	
+
+#pageTitle{
+    font-size: 24px;	
+    margin: 30px 0;     
+}
+
+.navigation{
+    padding: 5px 0 5px 25px;	
+}
+
+.cl-full{
+	width: 100%;
+    padding: 0 20px;	   
+}
+
+.field{
+	margin-top: 5px;
+	height: 40px;
+	line-height: 40px;
+}
+
+.campaignList-left-section p, 
+.pageViews p, 
+.viewCampaign a, 
+.field, 
+#createCampaignButton a, 
+.header ul.log-in li, 
+.header ul.log-in li a, 
+.footer p,
+.header ul.log-in li, 
+.header ul.log-in li a,
+.footer a
+{
+	font-size: 14px;
+}
+
+.navigation ul li a{
+	font-size: 16px;
+}
+
+.header ul li{
+    margin-right: 10px;
+}    
+
+.header ul.log-in{
+    margin: 0px 0px 0px 10px;   
+	float: none;
+    position: relative;
+    top: -20px;	
+}
+
+.campaignListInfo{
+    width: 375px;
+    height: 50px;
+    clear:both;
+}
+
+.viewCampaign{
+	height: 50px;
+}
+
+.viewCampaign a{
+	line-height: 50px;
+}
+
+.governance{
+	margin: 20px 35px 20px 0px;
+    width: 140px;	
+}
+
+.data-benchmarking {
+    width: 200px;
+	margin: 20px 0 55px 0;
+}  
+
+.pageViews p{
+	display: none;
+}
+
+.container_24 {
+    width: 45% !important;
+	margin-left: 0;
+    margin-right: 0;    
+}
+
+.buttons-column{
+	float:left;
+	clear:both;
+}
+
+#campaignList #createCampaignButton{
+	clear:both;
+    width: 370px;	
+}
+
+.footer p{
+	width: 360px;
+	padding: 0 0 0 20px;
+}
+
+}
+
+/***********************************************
+Mobile (landscape 420px) iPhone 6 Plus 
+***********************************************/
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+.header{
+    padding: 30px;
+}	
+
+.container_24 {
+    width: 100% !important;
+}
+
+#campaignList #createCampaignButton{
+	clear: both;	
+}
+
+.campaignListInfo{
+	margin-right: 15px;	
+}
+
+.buttons-column{
+	clear: none;	
+}
+
+.governance {
+	width: 115px;
+    margin: 0px 15px 20px 0px;
+}
+
+.data-benchmarking {
+    width: 175px;
+	margin: 0px 0 40px 0;
+}  
+
+.header ul.log-in {
+    margin: 0px 0px 0px 315px;
+    float: none;
+    position: relative;
+    top: -20px;
+}
+
+.footer{
+	height: 50px;
+}
+
+.footer p {
+    width: auto;
+    padding: 0 0 0 20px;
+    text-align: left;
+}   
+
+}
+
+/***********************************************
+Mobile (Portrait) iPhone 6 
+***********************************************/
+@media only screen and (min-width: 322px) and (max-width: 376px) {
+.header{
+    padding: 30px;
+}	
+.campaignListInfo{
+	width: 335px;
+}
+.governance {
+    margin: 20px 15px 20px 0px;
+}
+
+.data-benchmarking {
+    width: 180px;
+}
+
+#campaignList #createCampaignButton{
+    width: 330px;	
+}
+
+.header ul.log-in {
+    margin: 0px 0px 0px 10px;
+}
+
+.header ul.log-in li:nth-child(even) {
+  display: none;
+}
+
+.footer p {
+    padding: 0 0 0 5px;
+}
+
+}
+
+/***********************************************
+Mobile (Landscape) iPhone 6 
+***********************************************/
+@media only screen and (min-width: 569px) and (max-width: 667px) {
+.header{
+    padding: 30px;
+}	
+.campaignListInfo{
+	width: 310px;
+}
+
+.header ul.log-in {
+    margin: 0px 0px 0px 280px;
+
+}
+
+}
+
+
+/***********************************************
+Mobile (Portrait) iPhone 5 
+***********************************************/
+@media only screen and (max-width: 321px) {
+.header{
+    padding: 30px;
+}	
+.campaignListInfo {
+    width: 285px;
+}
+.governance {
+	width: 115px;
+    margin: 20px 8px 20px 0px;
+}
+
+.data-benchmarking {
+    width: 163px;
+}
+
+#campaignList #createCampaignButton{
+    width: 280px;	
+}
+
+.header ul.log-in {
+    margin: 0px 0px 0px -5px;
+}
+
+.footer{
+    height: 100px;	
+}
+
+.footer p {
+    padding: 0 0 0 10px;
+    width: 300px;
+}
+
+.header ul.log-in {
+	margin: 0px 0px 0px 20px;
+}
+
+.header img.logo {
+    width: 6%;
+}
+
+.header ul.log-in li, 
+.header ul.log-in li a{
+	font-size: 12px;
+}
+
+.header ul.log-in li:nth-child(even) {
+  display: none;
+}
+
+}
+
+
+
+
+/***********************************************
+Desktop
+***********************************************/
+@media only screen and (min-width: 960px) and (max-width: 989px) {
+.cl-full{
+	width:98%;
+}	
+
+#campaignList {
+    width: 100%;
+}
+
+}
+
+
+
+
+
+
+

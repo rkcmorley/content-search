@@ -1,0 +1,55 @@
+/* 
+    Document   : sitelevel
+    Created on : 04-Oct-2013, 09:35:06
+    Author     : Jared
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+.sitelevel h1{color: #4a4a4a;font-size: 48px;}
+.sitelevel h2{color: #4a4a4a;font-size: 21px;  margin: 0px; padding: 25px 0px 0px 25px;float: left;}
+.sitelevel h3{color: #4a4a4a;font-weight: bold;font-size: 19px;line-height: 12px;}
+.sitelevel h3 a{color: #4a4a4a;font-weight: bold;font-size: 19px;line-height: 12px;}
+.sitelevel .box{margin-bottom: 40px; margin-left: 2%; float: left; width: 47%; height: 70px; border: solid 1px #D1C7C7;border-radius:5px; background-color: #ECEBEB; color: blue;}
+.sitelevel .long-box{margin-bottom: 40px; margin-right: 2%; float: left; width: 96%; height: 70px; border: solid 1px #D1C7C7;border-radius:5px; background-color: #ECEBEB; color: blue;margin-left: 2%;}
+.inner-box{width: 200px; height: 50px; border: solid 1px #D1C7C7;border-radius:5px; float:right; margin: 9px 20px 0px 0px;background-color: white; text-align: center;}
+.long-inner-box{width: 1000px; height: 50px; border: solid 1px #D1C7C7;border-radius:5px; float:right; margin: 9px 20px 0px 0px;background-color: white; text-align: center;}
+.sitelevel .alternative-box{width: 400px; height: 500px; border: solid 1px #D1C7C7;  background-color: #ECEBEB; CLEAR:left}
+.alternative-inner-box{float:left; width:350px;margin-left: 25px;margin-top: 20px;height: 360px;}
+td{font-size: 20px;padding: 6px;font-weight: bold;padding-right: 20px;padding-left: 20px;}
+td.result{color:#4a4a4a}
+.sitelevel .gaugeinfo{border: solid 1px #D1C7C7;border-radius:5px; background-color: #ECEBEB;width: 602px; height: 300px; float: left;margin-left: 25px;}
+.sitelevel .score{border: solid 1px #D1C7C7;border-radius:5px; background-color: #ECEBEB;width: 572px; height: 138px; float: left;margin-left: 25px;margin-bottom: 10px;}
+.sitelevel .gaugeinfo-inner-box{border: solid 1px #D1C7C7;border-radius:5px;  margin: 9px 20px 0px 0px;background-color: white; text-align: center;width: 577px;height: 280px;margin-left: 10px;}
+.sitelevel .recommendation{width:100%; height: 53px; color: white; background-color: #d72d18; text-align: center;  margin-top: 24px; margin-bottom: 40px;float: left;line-height: 50px;font-size: 24px;font-weight: bold;}
+.sitelevel .snapshot{width: 600px; height: 450px;border: solid 1px #D1C7C7;border-radius:5px;background-color: #ECEBEB;float: left;margin-left: 2%}
+.sitelevel .score-inner-box{border: solid 1px #D1C7C7;border-radius:5px;  background-color: white; text-align: center;width: 110px;height: 100px;float: left;margin-right: 30px;margin-left: 17px;margin-top: 18px;}
+.sitelevel .percentage-inner-box{border: solid 1px #D1C7C7;border-radius:5px;  background-color: white; text-align: center;width: 295px;height: 100px;float: left;margin-top: 18px;}
+.sitelevel .score span{float: left;margin-top: 60px;margin-left: 35px;margin-right: 12px;font-size: 36px;font-weight: bold;}
+.sitelevel .percentage-inner-box p{font-size: 70px; line-height: 100px;margin: 0px;}
+.sitelevel .score-inner-box p{font-size: 70px; margin: 37px;}
+.sitelevel .recommendation-box{border: solid 1px #D1C7C7;border-radius:5px;   text-align: center;width: 32%;float: left;margin-right: 1%; margin-top: 10px; margin-bottom: 25px;background-color: #ECEBEB;}
+.sitelevel .recommendation-box p{color: #056BAB;font-size: 21px;font-weight: bold;float: left; margin-left: 20px;margin-right: 130px;width: 83px;padding-top: 15px;}
+.sitelevel .recommendation-number-inner-box{border: solid 1px #D1C7C7;border-radius:5px;  background-color: white; text-align: center;width: 150px;height: 60px;float: left;margin-top: 18px;font-size: 28px;line-height: 60px;font-weight: bold;}
+.sitelevel .recommendation-info-inner-box{border: solid 1px #D1C7C7;border-radius:5px;  background-color: white; text-align: left;width: 364px;height: 150px;float: left;margin-top: 10px;margin-left: 20px;margin-bottom: 10px;}
+.sitelevel .approve{border: solid 1px #D1C7C7;border-radius:5px;  background-color: white; text-align: center;width: 48%;float: left;margin-right: 20px; margin-top: 4px; margin-bottom: 20px;background-color: #ECEBEB;}
+.sitelevel .approve-inner-box{border: solid 1px #D1C7C7;border-radius:5px;  background-color: white; text-align: left;width: 565px;height: 73px;float: left;margin-top: 10px;margin-left: 20px;margin-bottom: 10px;}
+.approve .title{width: 100%;float: left;background-color: #d72d18;height: 49px;color: white;line-height: 48px;font-size: 24px;font-weight: bold;border-radius: 4px 4px 0px 0px;}
+.approve-inner-box span{margin: 0px 0px 0px 40px;line-height: 72px;font-size: 19px;font-weight: bold;color: #666;}
+.tick{height: 60px;width: 110px;float: right;margin-right: 30px;margin-top: 5px;text-align: center;border-radius: 5px;}
+.tick img{width: 100%;height: 100%;}
+.cross{height: 60px;width: 110px;float: right;margin-right: 30px;margin-top: 5px;text-align: center;border-radius: 5px;}
+.cross img{width: 100%;height: 100%;}
+.box-arrow-up{width: 0px;height: 0px;border-style: solid;border-width: 0 8px 16px 8px;border-color: transparent transparent green transparent;float: left;margin-top: 10px;margin-left: 10px;}
+.box-arrow-down{width: 0px;height: 0px;border-style: solid;border-width: 16px 8px 0 8px;border-color: red transparent transparent transparent;float: left;margin-top: 10px;margin-left: 10px;}
+.sitelevel #gauge text{display:none}
+.sitelevel .red{width: 15px;height: 15px; background-color: red;float: left; margin-right: 10px;}
+.sitelevel .yellow{width: 15px;height: 15px; background-color: yellow;float: left; margin-right:10px; margin-left: 30px;}
+.sitelevel .green{width: 15px;height: 15px; background-color: green;float: left; margin-right:10px;margin-left: 30px;}
+.sitelevel .key{
+    position: relative;
+    top: -65px;
+    left: 140px;
+}
+.sitelevel .key li{display:inline;float: left;}
+.navigation select option{font-size: 20px;}

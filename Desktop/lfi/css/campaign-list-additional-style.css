@@ -1,0 +1,245 @@
+/*
+Designed and coded by Richard Morley. 
+http://www.rkmorley.co.uk
+*/
+body{
+    overflow-x: hidden;
+}
+
+/*Header*/
+.header{
+	padding: 30px;
+	width: auto;
+	height: auto;
+	min-width: auto;
+}
+
+.top-section{
+	height: auto;
+}
+
+.navigation{
+	border: none;
+    padding: 5px 0 5px 50px;
+    background: #FFF;
+    border-top:1px dotted #ececec;
+    width: auto;
+    min-width: auto;
+}
+
+.navigation ul.breadcrumb{
+	margin-top: 20px;
+	margin-left: 0px;
+}
+
+.navigation ul li a:hover{
+    color:#8bbd3a;
+    -webkit-transition: color 400ms linear;
+    -moz-transition: color 400ms linear;
+    -o-transition: color 400ms linear;
+    -ms-transition: color 400ms linear;
+    transition: color 400ms linear;
+}
+
+#pageTitle{
+	margin-left: 0;
+	color: #666;
+	line-height: auto;
+	font-weight: normal;
+	margin-top: 55px;
+}
+
+.header img.logo{
+	height: auto;
+	margin:0;
+}
+
+.header ul.log-in{
+    margin: 35px 0 0 0;	
+}
+
+.header ul.log-in li, .header ul.log-in li a{
+	cursor: pointer;
+}
+
+.header ul.log-in li:hover, .header ul.log-in li a:hover{
+    color:#8bbd3a;
+    -webkit-transition: color 400ms linear;
+    -moz-transition: color 400ms linear;
+    -o-transition: color 400ms linear;
+    -ms-transition: color 400ms linear;
+    transition: color 400ms linear;
+}
+/*End of Header*/
+
+/*Links*/
+
+a {
+   color: #666;
+   }
+
+   a:hover {
+    color:#8bbd3a;
+    -webkit-transition: color 400ms linear;
+    -moz-transition: color 400ms linear;
+    -o-transition: color 400ms linear;
+    -ms-transition: color 400ms linear;
+    transition: color 400ms linear;
+  }
+
+/*End of Links*/
+
+/*Buttons*/
+#campaignList #createCampaignButton{
+    width: 15%;
+    float: left;
+    height: auto;
+    margin-right: 0px;	
+}
+
+#createCampaignButton a{
+	font-size: 20px;
+	color: #FFF;
+	font-weight: normal;
+}
+
+#createCampaignButton{
+	background:#8bbd3a;
+}
+
+#createCampaignButton:hover{
+	background:#5f8029;
+    -webkit-transition: background-color 600ms linear;
+    -moz-transition: background-color 600ms linear;
+    -o-transition: background-color 600ms linear;
+    -ms-transition: background-color 600ms linear;
+    transition: background-color 600ms linear;	
+}
+
+/*End of Buttons*/
+
+/*Columns*/
+.campaign-list-column-1, .campaign-list-column-2, .campaign-list-column-3{
+	width:100%;
+}
+
+/*End of Columns*/
+
+
+/*Campaign List*/
+.campaignListInfo{
+	border: none;
+	height: auto;
+	margin-bottom: 0px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;	
+    background: #FFF;
+    width:50%;
+}
+
+.viewCampaign{
+    -webkit-border-radius: 3px;
+    border-radius: 3px;		
+    background: #FFF;
+    color: #666;
+}
+
+.field{
+	margin-top: 7px;
+	font-size: 25px;
+	color: #666;
+	background: #ececec;
+}
+
+.campaignList-left-section p{
+	color: #666;
+	font-size: 20px;
+}
+
+.pageViews p{
+	color: #666;
+	font-size: 20px;
+}
+
+#campaignList #createCampaignButton{
+	margin-bottom: 30px;
+}
+
+.viewCampaign a{
+	font-size: 20px;
+	height: auto;
+}
+
+#pageTitle{
+	height:auto;
+	width:auto;
+	margin: 60px 0;
+}
+
+.governance{
+	width: 15%;	
+	background:#7e7e7e;		
+}
+
+.data-benchmarking{
+	width: 22%;
+	background:#7e7e7e;		
+}
+
+.governance a, .governance i{
+	color: #FFF;
+	font-weight: normal;
+}
+
+.data-benchmarking a, .data-benchmarking i{
+	color: #FFF;	
+	font-weight: normal;		
+}
+
+.governance:hover{
+	background:#32373c;
+    -webkit-transition: background-color 600ms linear;
+    -moz-transition: background-color 600ms linear;
+    -o-transition: background-color 600ms linear;
+    -ms-transition: background-color 600ms linear;
+    transition: background-color 600ms linear;		
+}
+
+.data-benchmarking:hover{
+	background:#32373c;
+    -webkit-transition: background-color 600ms linear;
+    -moz-transition: background-color 600ms linear;
+    -o-transition: background-color 600ms linear;
+    -ms-transition: background-color 600ms linear;
+    transition: background-color 600ms linear;		
+}
+/*End of Campaign List*/
+
+/*Footer*/
+.footer{
+	background: #FFF;
+	margin-top: 0;
+}
+
+.footer p{
+	font-size: 16px;
+}
+/*End of Footer*/
+
+/*Grid*/
+.container_24{
+	width: 100% !important;
+	min-width: auto !important;
+}
+
+.full{
+  margin: auto;
+  width: 80%;
+}
+/*End of Grid*/
+
+
+
+
+
+

@@ -1,0 +1,56 @@
+/* 
+    Document   : dataDetails
+    Created on : 08-Oct-2013, 15:27:20
+    Author     : jared
+    Description:
+        Purpose of the stylesheet follows.
+*/
+#datadetails h1{color: #4a4a4a;font-size: 42px;margin-bottom: 20px;clear: both;margin-left: 5px;}
+#datadetails h2{color: #666;font-size: 22px;  margin: 0px; padding: 25px 0px 0px 25px;float: left;}
+#datadetails h3{color: #139E35;font-weight: bold;font-size: 27px;line-height: 0px;}
+#datadetails .ftab { margin: 0; padding: 0;  margin-top: 60px; margin-bottom: 5px;}
+#datadetails .tab {  border-bottom: solid 1px;width:160px; display: inline-block; zoom:1; *display:inline; background: #ebebeb; padding: 5px; margin: -3px; border: solid 1px #C4C4C4; -moz-border-radius: 4px 4px 0 0; -webkit-border-radius: 4px 0px 0px 4px;cursor: pointer;}
+#datadetails .tab a { font-size: 18px; line-height: 2em; display: block; padding: 0 10px; outline: none; text-decoration: none; color: #4a4a4a; font-family: 'Open Sans', sans-serif; font-weight: bold;}
+#datadetails .tab a:hover {  }
+#datadetails .tab.active { background: #fff; padding-top: 5px; position: relative; border-color: #C4C4C4; }
+#datadetails .tab a.active { font-weight: bold; color:#db0000; text-decoration: none;}
+#datadetails .tab-container1{text-align: center; margin-top: 15px;}
+#datadetails .tab-container1 .panel-container { background: #fff; border: solid #666 1px; padding: 10px; -moz-border-radius: 0 4px 4px 4px; -webkit-border-radius: 0 4px 4px 4px; }
+#datadetails .left{left:5px; border-right:0px}
+#datadetails .middle{border-left: 0px;border-right: 0px; -moz-border-radius: 0px; -webkit-border-radius: 0px; } 
+#datadetails .middle a{margin-left: 10px; margin-right: 10px;}
+#datadetails .middle.active a{margin-right: 2px;}
+#datadetails .right{ -moz-border-radius: 0px 4px 4px 0px; -webkit-border-radius: 0px 4px 4px 0px; right: 10px; border-left: 0px}
+#datadetails #dashboard{text-align: left; margin-top: 25px}
+#datadetails #dashboard .box{margin-bottom: 40px; margin-right: 30px; float: left; width: 390px; height: 70px; border: solid 1px #D1C7C7;border-radius:5px; background-color: #ECEBEB; color: blue;}
+#datadetails #dashboard .inner-box{ height: 50px; border: solid 1px #D1C7C7;border-radius:5px; float:right; margin: 9px 20px 0px 0px;background-color: white; text-align: center;min-width: 50px;}
+#datadetails #dashboard .alternative-box{width: 400px; height: 500px; border: solid 1px #D1C7C7;  background-color: #ECEBEB; CLEAR:left}
+#datadetails #dashboard .alternative-inner-box{float:left; width:350px;margin-left: 25px;margin-top: 20px;height: 360px;}
+#datadetails #table{margin-top: 25px}
+#datadetails #table table{width: 100%}
+#datadetails #table table th{color:white; background-color: #056BAB; font-size: 19px;line-height: 45px;}
+#datadetails #barchart{margin-top: 25px}
+#datadetails #barchart table{width: 100%; }
+#datadetails #barchart th{font-size:20px; color:#666}
+#datadetails #barchart table tr td{line-height: 60px; color:#666}
+#datadetails #contentscore{margin-top: 25px}
+#datadetails #contentscore table{width: 100%; }
+#datadetails #contentscore th{font-size:20px; color:#666}
+#datadetails #contentscore table tr td{line-height: 60px; color:#666}
+#datadetails #infrastructurescore{margin-top: 25px}
+#datadetails #infrastructurescore table{width: 100%; }
+#datadetails #infrastructurescore th{font-size:20px; color:#666}
+#datadetails #infrastructurescore table tr td{line-height: 60px; color:#666}
+
+#datadetails #searchscore{margin-top: 25px}
+#datadetails #searchscore table{width: 100%; }
+#datadetails #searchscore th{font-size:20px; color:#666}
+#datadetails #searchscore table tr td{line-height: 60px; color:#666}
+
+
+
+#datadetails .country{    line-height: 60px;}
+#datadetails .site{font-size: 23px;color: #666;line-height: 60px;}
+#datadetails .rank{font-size: 25px;font-weight: bold;line-height: 60px;color: #139E35;}
+#datadetails .bar{-moz-border-radius: 5px;border-radius: 5px; height: 40px;}
+#datadetails .countries{font-size:23px}

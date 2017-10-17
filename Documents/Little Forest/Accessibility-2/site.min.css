@@ -253,7 +253,7 @@ body {
     font-size: 16px;
     line-height: 1.428571429;
     color: #666;
-    background-color: #ececec;
+    background-color: #FFF;
 }
 input,
 button,
@@ -3978,7 +3978,8 @@ textarea.input-group-sm>.input-group-btn>.btn {
     margin-bottom: 21px;
     list-style: none;
     background-color: #fff;
-    border-radius: 3px
+    border-radius: 3px;
+    border: 1px dotted #ececec;
 }
 .breadcrumb>li {
     display: inline-block
@@ -4566,11 +4567,9 @@ a.list-group-item:focus {
     min-height: 20px;
     padding: 19px;
     margin-bottom: 20px;
-    background-color: #eaeff1;
-    border: 1px solid #d5dfe3;
+    background-color: #FFF;
+    border: 1px dotted #ececec;
     border-radius: 4px;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05)
 }
 .well blockquote {
     border-color: #ddd;
@@ -5295,11 +5294,7 @@ input[type=color]:focus,
     -webkit-box-shadow: none;
     box-shadow: none
 }
-.well {
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    border-width: 0
-}
+
 .crunch {
     margin: 0!important
 }
@@ -6390,6 +6385,7 @@ span {
     border-radius: 3px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
+    border: 1px dotted #ececec;
 }
 
 .top-section {
@@ -6504,6 +6500,8 @@ span {
   list-style: none outside none;
   text-align: left;
   text-transform: none;
+  border-left: 1px dotted #ececec;
+  border-right: 1px dotted #ececec;
 }
 .menu-wrapper .sub-menu li {
   display: block;
@@ -6518,7 +6516,7 @@ span {
 
 .menu-wrapper .sub-menu li:last-child {
   border-top: transparent;
-  border-bottom: transparent;
+  border-bottom: 1px solid #ececec;
 }
 
 .menu-wrapper .sub-menu a {
@@ -6527,7 +6525,7 @@ span {
 }
 
 .menu-wrapper li:hover .sub-menu {
-  max-height: 30em;
+  max-height: 600px;
   transition: max-height 0.5s;
 }
 
@@ -6542,6 +6540,7 @@ nav ul li{
 .navigation {
     padding: 0 30px;
     border-top: 1px dotted #ececec;
+    border-bottom: 1px dotted #ececec;    
     width: auto;
     min-width: auto;
     height: 60px;  
@@ -6568,7 +6567,7 @@ nav ul li{
 span.divider {
     display: inline-block;
     width: 0;
-    height: 60px;
+    height: 58px;
     border-left: 1px dotted #ececec;
     border-right: 1px dotted #ececec;
     position: relative;

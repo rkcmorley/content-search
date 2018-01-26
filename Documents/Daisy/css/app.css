@@ -1,0 +1,163 @@
+ .breakpoint-paragraph {
+  white-space: pre-wrap;
+ }
+
+ p, li{
+ 	  color: #505050;
+ }
+
+ label {
+ 	color:  #FFF;
+ }
+
+.scrollup {
+    position: fixed;
+    bottom: 50px;
+    right: 100px;
+    z-index: 1;
+    display: none;
+    background-color: #0657b7;
+    color: #FFF;
+    text-align: center;    
+    padding: 15px 25px;
+    -webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+}
+
+.scrollup i {
+	vertical-align: middle;
+}
+
+.scrollup:hover {
+	color: #FFF;
+	background: #032a59;
+  -webkit-transition: background-color 1s ease-out;
+  -moz-transition: background-color 1s ease-out;
+  -o-transition: background-color 1s ease-out;
+  transition: background-color 1s ease-out;	
+}
+
+.header-center {
+	text-align: center;
+	font-weight:  300;
+}
+
+.terms-and-conditions {
+	font-size: 12px;
+    margin-bottom: 0;	
+}
+
+.contact-btn, .top-btn {
+	background: #f08900;
+}
+
+.contact-btn:hover, .top-btn:hover {
+	background: #c37700;
+}
+
+.third-section {
+	background: #f29400;
+	color:  #FFF;
+}
+
+.third-section  p {
+	color:  #FFF;
+}
+
+.contact-btn {
+	margin:  35px 0 0 0;
+}
+
+.hybrid-btn {
+	margin:  35px 0 0 0;
+	background: #0657b7;
+}
+
+.hybrid-btn:hover {
+	background: #032a59;
+}
+
+.wrapper {
+	height:  100%;
+}
+
+.first-section {
+	color:  #FFF;
+	height: 100%;
+}
+
+.second-section, .sixth-section, .eight-section {
+	background: #FFF;
+}
+
+.second-section, .third-section, .sixth-section {
+	padding:  55px 0 95px 0;	
+}
+
+.eight-section {
+	padding:  20px 0;
+}
+
+.center-form label {
+	color:  #FFF;
+}
+
+form {
+	margin:  35px 0 0 0;
+}
+
+h1.header-center {
+	margin:  35px 0 0 0;
+}
+
+h2.header-center {
+	margin:  0 0 35px 0;
+}
+
+h3.header-center {
+	color: #0072c6;
+	margin: 0 0 75px 0;	
+}
+
+h4 {
+	color: #0072c6;	
+	font-weight:  300;
+}
+
+.third-section h3.header-center {
+	color:  #FFF;
+}
+
+
+
+li {
+	margin-bottom:  10px;
+	color:  #8a8a8a;
+}
+
+.full-width {
+	max-width: 100%;
+}
+
+.flex-video {
+	margin-bottom: 0;
+}
+
+.last-column {
+	margin-bottom: 50px;
+}
+
+.feature-spacing {
+	margin-bottom: 40px;
+}
+ 
+@media screen and (max-width:768px) {
+.wrapper {
+	height: auto;
+}
+}
+
+
+
+

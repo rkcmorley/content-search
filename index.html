@@ -1,0 +1,177 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Content Search</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css ">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+<!-- URL Section-->
+<div class="url-section">
+<div class="url-box">
+<div class="url-box-container">
+<div class="box-title-section">
+<div class="title-section">
+<i class="fa fa-link"></i> <span class="content-search-type">URL</span>	
+</div>
+<div class="trash-section">
+<div class="trash-btn"><i class="fa fa-times" aria-hidden="true"></i></div>
+</div>
+</div>
+<div class="url-content">
+<input type="text" class="url-search-field" placeholder="Type here to match a URL">
+<label>
+<select>
+    <option value="1">Include</option>
+    <option value="2">Exclude</option>
+</select>
+</label>
+<button class="add-btn"><i class="fa fa-plus" aria-hidden="true"></i></button>
+<button class="delete-btn"><i class="fa fa-times" aria-hidden="true"></i></button>
+
+</div>
+</div>
+</div>
+
+</div> 
+<!-- URL Section--> 
+
+<!-- Content Search Button Section--> 
+	<div class="overall-content-search-box">
+			<div class="content-search-btn">
+				<div class="left">Add a Content Search</div> 
+				<div class="right"><i class="fa fa-caret-down" aria-hidden="true"></i></div>
+		</div>		
+		<div class="content-search-list">
+			
+  				<input type="text" class="content-search-field" placeholder="Type here to find a specific content search">
+			<div class= "left-content-search-group">
+					<div class="left-content-search first-child">
+					<a class="url-btn" href="#">
+						<i class="fa fa-link"></i> 
+						<span class="content-search-type">URL</span>
+					</a>	
+					</div>	
+
+
+					<div class="left-content-search">
+					<a href="#">
+						<i class="fa fa-file-text-o" aria-hidden="true"></i>					
+						<span class="content-search-type">Title</span> 
+					</a>
+					</div>
+				<div class="left-content-search">
+					<a href="#">
+						<i class="fa fa-list-alt" aria-hidden="true"></i>
+						<span class="content-search-type">Description</span> 
+					</a>
+				</div>
+				<div class="left-content-search">
+					<a href="#">
+						<i class="fa fa-font" aria-hidden="true"></i>
+						<span class="content-search-type">Keywords </span>
+					</a>
+				</div>
+				<div class="left-content-search">
+					<a href="#">
+						<span>H<span style="font-size:10px;">1</span></span> 
+						<span class="content-search-type">H1</span> 
+					</a>
+				</div>
+				<div class="left-content-search">
+					<a href="#">
+					<span>H<span style="font-size:10px;">2</span></span> 
+					<span class="content-search-type">H2</span> 
+				</a>
+			</div>
+				<div class="left-content-search">
+					<a href="#">
+						<span>H<span style="font-size:10px;">3</span></span> 						
+						<span class="content-search-type">H3</span> 
+					</a>
+				</div>
+				<div class="left-content-search">
+					<a href="#">
+						<i class="fa fa-file-code-o" aria-hidden="true"></i>
+						<span class="content-search-type">Status Code</span> 
+					</a>
+				</div>
+				<div class="left-content-search">
+					<a href="#">
+						<i class="fa fa-book" aria-hidden="true"></i>
+						<span class="content-search-type">Content Type</span>
+					</a>
+				</div>		
+</div>
+			<div class= "right-content-search-group">
+
+					<div class="right-content-search first-child url-btn">
+					<a href="#">
+						<span class="content-search-type">Match content in the Page URL </span>
+					</a>	
+					</div>	
+
+
+					<div class="right-content-search">
+					<a href="#">				
+						<span class="content-search-type">Match specific content in the page title or identify empty page titles to avoid SEO and Accessibility issues</span> 
+					</a>
+					</div>
+
+				<div class="right-content-search">
+					<a href="#">
+						<span class="content-search-type">Match description in the page </span> 
+					</a>
+				</div>
+				<div class="right-content-search">
+					<a href="#">
+						<span class="content-search-type">Match specific keywords in the page </span>
+					</a>
+				</div>
+				<div class="right-content-search">
+					<a href="#">
+						<span class="content-search-type">Match content with a specific heading (H1) or ensure that empty H1 are never used on your site </span> 
+					</a>
+				</div>
+				<div class="right-content-search">
+					<a href="#">
+					<span class="content-search-type">Match content with a specific heading (H2) or ensure that empty H2 are never used on your site</span> 
+				</a>
+			</div>
+				<div class="right-content-search">
+					<a href="#">						
+						<span class="content-search-type">Match content with a specific heading (H3) or ensure that empty H3 are never used on your site</span> 
+					</a>
+				</div>
+				<div class="right-content-search">
+					<a href="#">
+						<span class="content-search-type">Match specific status code</span> 
+					</a>
+				</div>
+				<div class="right-content-search">
+					<a href="#">
+						<span class="content-search-type">Match single words, names or phrases -useful for removing jargon words and organisational name changes</span>
+					</a>
+				</div>	
+				</div>
+</div>
+</div>
+<!-- Content Search Button Section--> 
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
